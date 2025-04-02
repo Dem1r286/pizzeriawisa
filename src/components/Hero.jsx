@@ -13,10 +13,10 @@ const Hero = () => {
         Picerija Wisa – Savršenstvo Ukusa u Svakom Zalogaju!
       </p>
 
-      <div className="text-center mt-8 px-10 py-6 rounded-2xl mb-100 bg-[#F3274C]">
+      <div className="text-center mt-8 px-10 py-6 rounded-2xl mb-100 bg-black/70">
         <p className="text-white text-lg">
           Pozovite nas na broj:{" "}
-          <span className="font-bold text-yellow-400">+387 61 123 456</span>
+          <span className="font-bold text-white">+387 61 205 605 ili +387 62 805 205</span>
         </p>
         <p className="text-white text-md mt-2">
           Otvoreni svakim danom od 10:00 do 22:00. Dostava na vaša vrata u roku
