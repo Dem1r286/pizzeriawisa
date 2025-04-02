@@ -4,8 +4,8 @@ import FoodCard from "./components/FoodCard";
 
 const FoodOffer = () => {
   return (
-    <div className="flex justify-center items-center flex-col">
-      <p className="font-bold text-5xl text-[#222222] mb-3">PONUDA</p>
+    <div className="flex justify-center items-center flex-col mb-50">
+      <p className="font-black text-5xl text-[#F3274C] mb-3">PONUDA</p>
 
       <div className="flex flex-row gap-10 font-semibold text-lg mb-20">
         <p>Pizza</p>

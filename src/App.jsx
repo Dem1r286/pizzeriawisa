@@ -8,17 +8,20 @@ import Hero from './components/Hero';
 import ImageLayout from './components/ImageLayout';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer'
+import Testimonials from './components/Testimonials';
+
 
 function App() {
   return (
-    <div className="flex justify-center items-center flex-col mt-40 gap-40">
+    <div className="flex justify-center items-center flex-col mt-[60px]">
       <Header />
       <Hero />
       <FoodOffer />
       <DeliveryProcess />
-      <ImageLayout />
       <ComboPackages />
+      <ImageLayout />
+      <Testimonials />
       <Footer />
     </div>
   );

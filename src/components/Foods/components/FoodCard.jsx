@@ -2,7 +2,7 @@ import React from "react";
 
 const FoodCard = ({ imageSrc, title, description, price }) => {
   return (
-    <div className="flex justify-center items-center flex-col w-[300px] h-[500px] bg-white rounded-2xl shadow-md">
+    <div className="flex justify-center items-center flex-col w-[300px] h-[500px] bg-white rounded-2xl shadow-md hover:scale-104 transition-transform duration-300">
 
       <div className="w-full h-1/2 rounded-2xl">
         <img

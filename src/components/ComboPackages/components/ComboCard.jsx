@@ -2,7 +2,7 @@ import React from "react";
 
 const ComboCard = ({ imageSrc, title, description, price }) => {
     return (
-        <div className="flex justify-center items-center w-[500px] h-[300px] bg-white rounded-2xl shadow-md">
+        <div className="flex justify-center items-center w-[500px] h-[300px] bg-white rounded-2xl shadow-md hover:scale-104 transition-transform duration-300">
             {/* Image on the left side */}
             <div className="w-1/2 h-full rounded-2xl">
                 <img src={imageSrc} alt={title} className="w-full h-full object-cover rounded-2xl" />
