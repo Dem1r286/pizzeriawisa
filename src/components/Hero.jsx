@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div
       className="flex justify-between items-center flex-col h-[70vh] bg-cover bg-center w-screen mb-30"
-      style={{ backgroundImage: `url(./src/assets/herobackground.png)` }}
+      style={{ backgroundImage: `url(/assets/herobackground.png)` }}
     >
       <p
         className="font-black text-white text-[55px] mt-25 rounded-2xl"

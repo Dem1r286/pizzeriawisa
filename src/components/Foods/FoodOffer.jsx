@@ -25,21 +25,21 @@ const FoodOffer = () => {
 
       <div className="flex justify-center items-center flex-row gap-[2vw]">
         <FoodCard
-          imageSrc="/src/assets/combopizza.jpg"
+          imageSrc="/assets/combopizza.jpg"
           title="Delicious Pizza"
           description="A savory pizza with fresh ingredients."
           price="$12.99"
         />
 
         <FoodCard
-          imageSrc="/src/assets/combopizza.jpg"
+          imageSrc="/assets/combopizza.jpg"
           title="Tasty Burger"
           description="A juicy burger with crispy fries."
           price="$8.99"
         />
 
         <FoodCard
-          imageSrc="/src/assets/combopizza.jpg"
+          imageSrc="./assets/combopizza.jpg"
           title="Pasta Delight"
           description="Pasta served with a rich creamy sauce."
           price="$15.50"
