@@ -25,7 +25,7 @@ const DeliveryProcess = () => {
           <div key={index} className="flex flex-col items-center gap-3">
             <img src={stage.imageUrl} alt={`Stage ${index + 1}`} className="w-16 h-16" />
             <p className="text-[#222222] text-[15px] text-center font-bold pb-2">{stage.text}</p>
-            <img src="/assets/DeliveryProcessIcons/deliverybar.svg" alt="" className="w-50" />
+            <img src="assets/DeliveryProcessIcons/deliverybar.svg" alt="" className="w-50" />
           </div>
         ))}
       </div>
@@ -33,7 +33,7 @@ const DeliveryProcess = () => {
       <div className="relative w-full overflow-hidden">
         {/* Scooter */}
         <motion.img
-          src="/assets/DeliveryProcessIcons/scooterdelivery.png"
+          src="assets/DeliveryProcessIcons/scooterdelivery.png"
           alt="Scooter"
           className="w-32 md:w-40"
           initial={{ x: "-200px" }}
