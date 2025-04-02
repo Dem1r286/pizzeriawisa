@@ -14,19 +14,19 @@ const ComboPackages = () => {
 
       <div className="flex justify-center items-center flex-row flex-wrap gap-[3vw]">
         <ComboCard
-          imageSrc="/assets/combopizza.jpg" 
+          imageSrc="assets/combopizza.jpg" 
           title="Pizza Combo"
           description="A delicious combo of pizza, fries, and a drink."
           price="13KM"
         />
         <ComboCard
-          imageSrc="/assets/ImageGallery/pizza2.png" 
+          imageSrc="assets/ImageGallery/pizza2.png" 
           title="Combo Pizza"
           description="A fresh and healthy salad combo with a dressing of your choice."
           price="12KM"
         />
         <ComboCard
-          imageSrc="/assets/ImageGallery/pizza3.jpg"
+          imageSrc="assets/ImageGallery/pizza3.jpg"
           title="Pizza Combo"
           description="A delicious combo of pizza, fries, and a drink."
           price="11KM"

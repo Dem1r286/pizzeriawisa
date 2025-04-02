@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const DeliveryProcess = () => {
   const stages = [
-    { text: "Naručite pozivom ili preko Glovo / Korpa", imageUrl: "/assets/DeliveryProcessIcons/phone.png" },
-    { text: "Potvrdite narudžbu", imageUrl: "/assets/DeliveryProcessIcons/orderconfirmation.png" },
-    { text: "Naši brzi dostavljači su na putu", imageUrl: "/assets/DeliveryProcessIcons/deliveryvan.png" },
-    { text: "Primite dostavu i uživajte!", imageUrl: "/assets/DeliveryProcessIcons/pizzabox.png" }
+    { text: "Naručite pozivom ili preko Glovo / Korpa", imageUrl: "assets/DeliveryProcessIcons/phone.png" },
+    { text: "Potvrdite narudžbu", imageUrl: "assets/DeliveryProcessIcons/orderconfirmation.png" },
+    { text: "Naši brzi dostavljači su na putu", imageUrl: "assets/DeliveryProcessIcons/deliveryvan.png" },
+    { text: "Primite dostavu i uživajte!", imageUrl: "assets/DeliveryProcessIcons/pizzabox.png" }
   ];
 
   return (
