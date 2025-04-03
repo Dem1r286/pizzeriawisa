@@ -11,7 +11,7 @@ const FoodCard = ({ imageSrc, title, description, price }) => {
           className="w-full h-full object-cover rounded-2xl"
         />
       </div>
-      <div className="w-1/2 h-full p-4 flex flex-col justify-between items-start py-6">
+      <div className="w-full h-full p-4 flex flex-col justify-between items-start py-6">
         <div>
           <h2 className="text-2xl font-semibold text-[#F3274C]">{title}</h2>
 

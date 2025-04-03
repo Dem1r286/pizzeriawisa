@@ -6,7 +6,7 @@ const Footer = () => {
     <div id="footer" className="relative w-full text-white mt-40 flex flex-col">
       <Waves />
 
-      <div className="footer-content flex z-10 px-60 flex flex-row justify-between items-center h-full pb-10">
+      <div className="footer-content flex z-10 flex flex-row justify-center gap-[10vw] items-center h-full pb-10">
         <div className="w-1/4 text-xs mt-6">
           <h3 className="font-bold text-xl mb-2">Kontakt</h3>
           <p>📍 Lokacija: Pizzeria Wisa, 123 Pizza Street, Cityville</p>

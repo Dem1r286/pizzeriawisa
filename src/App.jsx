@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from './components/Footer/Footer'
 import Testimonials from './components/Testimonials';
+import AboutUs from './components/AboutUs';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <Hero />
       <FoodOffer />
+      <AboutUs />
       <DeliveryProcess />
       <ComboPackages />
       <ImageLayout />

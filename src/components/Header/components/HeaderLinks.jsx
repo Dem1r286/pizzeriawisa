@@ -10,7 +10,7 @@ const HeaderLinks = () => {
           </p>
           <p to="/travel-packages" className="cursor-pointer">O nama</p>
           <p to="/book-trip" className="cursor-pointer">
-            Meni
+            Menu
           </p>
           <p to="/investment" className="cursor-pointer">
             Lokacija

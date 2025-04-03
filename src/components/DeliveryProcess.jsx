@@ -16,7 +16,7 @@ const DeliveryProcess = () => {
         <p className="font-bold text-5xl text-[#222222] mt-2">BRZO I JEDNOSTAVNO</p>
         <p className="w-[70%] text-center mt-3">
           Proces dostave je brz i efikasan, ali može varirati u zavisnosti od trenutne gužve u gradu.
-          Ipak, u prosjeku, cijeli proces traje oko 20 minuta, od narudžbe do isporuke – jednostavno i pouzdano!
+          Ipak, u prosjeku, cijeli proces traje oko 20-30 minuta, od narudžbe do isporuke – jednostavno i pouzdano!
         </p>
       </div>
 
