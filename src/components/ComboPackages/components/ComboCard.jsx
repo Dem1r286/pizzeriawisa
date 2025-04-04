@@ -11,12 +11,14 @@ const ComboCard = ({ imageSrc, title, description, price }) => {
             {/* Text on the right side */}
             <div className="w-1/2 h-full p-4 flex flex-col justify-between items-start py-6">
                 <div>
-                    <h2 className="text-2xl font-semibold text-[#F3274C]">{title}</h2>
-                    <p className="text-sm text-[#555] mt-2">{description}</p>
+                    <h2 className="text-2xl font-bold text-[#F3274C]">{title}</h2>
+                    <p className="text-sm text-[#555] mt-2"><span className="text-[#F3274C] font-black">-</span>  {description}</p>
+                    <p className="text-sm text-[#555] mt-2"><span className="text-[#F3274C] font-black">-</span>  Sok po želji</p>
+                    <p className="text-sm text-[#555] mt-2"><span className="text-[#F3274C] font-black">-</span> Palačinak</p>
                 </div>
 
                 {/* Price at the bottom */}
-                <p className="mt-4 text-lg font-bold text-[#F3274C]">{price}</p>
+                <p className="mt-4 text-[23px] font-bold text-[#F3274C]">{price}</p>
             </div>
         </div>
     );

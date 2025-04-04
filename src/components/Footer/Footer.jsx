@@ -17,8 +17,9 @@ const Footer = () => {
           <p>Subota - Nedjelja: 12:00 - 23:00</p>
         </div>
 
-        <div className="mt-6">
+        <div id="location" className="mt-6">
           <iframe
+            title="Google mapa - Pizzeria Wisa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.738588335883!2d18.401471504572623!3d43.858428572748146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c91fc72a27b5%3A0xbd2c27a37c39e043!2sPizzeria%20Wisa!5e1!3m2!1sen!2sba!4v1743601768273!5m2!1sen!2sba"
             width="350"
             height="250"

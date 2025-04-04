@@ -1,32 +1,81 @@
-import React from 'react';
-import './App.css';
-import ComboPackages from './components/ComboPackages/ComboPackages';
-import DeliveryProcess from './components/DeliveryProcess';
-import Header from './components/Header/Header'
-import FoodOffer from './components/Foods/FoodOffer';
-import Hero from './components/Hero';
-import ImageLayout from './components/ImageLayout';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Footer from './components/Footer/Footer'
-import Testimonials from './components/Testimonials';
-import AboutUs from './components/AboutUs';
+import React, { Suspense, lazy } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { motion } from "framer-motion";
 
+const ComboPackages = lazy(() => import("./components/ComboPackages/ComboPackages"));
+const DeliveryProcess = lazy(() => import("./components/DeliveryProcess"));
+const Header = lazy(() => import("./components/Header/Header"));
+const FoodOffer = lazy(() => import("./components/Foods/FoodOffer"));
+const Hero = lazy(() => import("./components/Hero"));
+const ImageLayout = lazy(() => import("./components/ImageLayout"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
+const Testimonials = lazy(() => import("./components/Testimonials"));
+const Menu = lazy(() => import("./components/Menu"));
+
+const FadeInSection = ({ children }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+      className=""
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 function App() {
   return (
-    <div className="flex justify-center items-center flex-col mt-[60px]">
-      <Header />
-      <Hero />
-      <FoodOffer />
-      <AboutUs />
-      <DeliveryProcess />
-      <ComboPackages />
-      <ImageLayout />
-      <Testimonials />
-      <Footer />
-    </div>
+    <Router>
+      <div className="flex justify-center items-center flex-col mt-[60px] z-1">
+          <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                  <Hero />
+                <Suspense fallback={<div>Loading Food Offer...</div>}>
+                  <FoodOffer />
+                </Suspense>
+
+                <Suspense fallback={<div>Loading Delivery Process...</div>}>
+                  <DeliveryProcess />
+                </Suspense>
+
+                <Suspense fallback={<div>Loading Combo Packages...</div>}>
+                  <ComboPackages />
+                </Suspense>
+
+                <Suspense fallback={<div>Loading Image Layout...</div>}>
+                  <ImageLayout />
+                </Suspense>
+
+                <FadeInSection>
+                  <Suspense fallback={<div>Loading Testimonials...</div>}>
+                    <Testimonials />
+                  </Suspense>
+                </FadeInSection>
+              </>
+            }
+          />
+          <Route path="/menu" element={
+            <Suspense fallback={<div>Loading Menu...</div>}>
+              <Menu />
+            </Suspense>
+          } />
+        </Routes>
+        
+        <Suspense fallback={<div>Loading Footer...</div>}>
+          <Footer />
+        </Suspense>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+

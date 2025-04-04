@@ -71,7 +71,7 @@ const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="flex flex-col justify-center items-center bg-gray-200 px-40 pt-20 pb-20 rounded-xl mt-20 shadow-lg mt-60 mb-60"
+      className="select-none flex flex-col justify-center items-center bg-gray-200 px-40 pt-20 pb-20 rounded-xl mt-20 shadow-lg mt-60 mb-60"
     >
       <div className="flex justify-center items-center flex-col mb-10 gap-2">
         <h2 className="text-3xl font-semibold text-black">
@@ -83,50 +83,54 @@ const Testimonials = () => {
         </p>
       </div>
 
-      <Swiper
-        modules={[Autoplay]}
-        spaceBetween={60}
-        slidesPerView={2}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        className="w-full max-w-6xl"
-      >
-        {testimonials.map((testimonial, index) => (
-          <SwiperSlide
-            key={index}
-            className="bg-white p-6 rounded-xl shadow-lg flex justify-between items-start"
-            style={{
-              height: "250px", 
-              width: "100%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between", 
-            }}
-          >
-            <div className="flex flex-col justify-between flex-grow">
-              <div className="flex items-center gap-4">
-                <div>
-                  <h3 className="font-bold">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-500">{testimonial.date}</p>
+      <div className="flex justify-center items-center flex-col">
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={60}
+          slidesPerView={2}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          className="max-w-[1200px]"
+        >
+          {testimonials.map((testimonial, index) => (
+            <SwiperSlide
+              key={index}
+              className="bg-white p-6 rounded-xl shadow-xl"
+              style={{
+                height: "250px",
+                width: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
+              <div className="flex flex-col justify-between flex-grow">
+                <div className="flex items-center gap-4">
+                  <div>
+                    <h3 className="font-bold">{testimonial.name}</h3>
+                    <p className="text-sm text-gray-500">{testimonial.date}</p>
+                  </div>
+                </div>
+
+                <p className="mt-4 text-gray-600 mb-10">
+                  {testimonial.description}
+                </p>
+
+                <div className="mt-auto flex justify-start">
+                  <Rating
+                    value={testimonial.rating}
+                    readOnly
+                    precision={0.5}
+                    size="medium"
+                  />
                 </div>
               </div>
-
-              <p className="mt-4 text-gray-600 mb-10">{testimonial.description}</p>
-
-              <div className="mt-auto flex justify-start">
-                <Rating
-                  value={testimonial.rating}
-                  readOnly
-                  precision={0.5}
-                  size="medium"
-                />
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
       <div className="flex justify-center items-center flex-col mt-10 gap-2">
         <div className="flex flex-row justify-center items-center gap-4">
