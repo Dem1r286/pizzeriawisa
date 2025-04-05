@@ -4,7 +4,8 @@ import HeaderLinks from "./components/HeaderLinks";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 left-0 w-full flex items-center bg-white shadow justify-between px-8 py-4 z-10">
+    <div
+      className="fixed top-0 left-0 w-full flex items-center justify-between px-8 py-6 z-10 bg-white/50">
       <HeaderLogo />
       <HeaderLinks />
       <div></div>

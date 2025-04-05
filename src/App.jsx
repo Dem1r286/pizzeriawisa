@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 const ComboPackages = lazy(() => import("./components/ComboPackages/ComboPackages"));
 const DeliveryProcess = lazy(() => import("./components/DeliveryProcess"));
-const Header = lazy(() => import("./components/Header/Header"));
 const FoodOffer = lazy(() => import("./components/Foods/FoodOffer"));
 const Hero = lazy(() => import("./components/Hero"));
 const ImageLayout = lazy(() => import("./components/ImageLayout"));
@@ -30,8 +29,7 @@ const FadeInSection = ({ children }) => {
 function App() {
   return (
     <Router>
-      <div className="flex justify-center items-center flex-col mt-[60px] z-1">
-          <Header />
+      <div className="flex justify-center items-center flex-col">
         <Routes>
           <Route
             path="/"

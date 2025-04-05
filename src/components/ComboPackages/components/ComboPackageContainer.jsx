@@ -19,7 +19,7 @@ const FadeInSection = ({ children, delay = 0 }) => {
 
 const ComboPackageContainer = () => {
   return (
-    <div className="flex justify-center items-center flex-row flex-wrap gap-[3vw]">
+<div className="flex justify-center items-center flex-row flex-wrap sm:gap-[3vw] gap-20">
       <FadeInSection delay={0.2}>
         <ComboCard
           imageSrc="/assets/combopizza.webp"

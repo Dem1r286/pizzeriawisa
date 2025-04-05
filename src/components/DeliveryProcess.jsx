@@ -24,18 +24,18 @@ const DeliveryProcess = () => {
   return (
     <div className="flex justify-center items-center w-screen flex-col">
       <div className="flex justify-center items-center flex-col mb-20">
-        <p className="font-black text-[#F3274C] text-xl text-center">EKSPRESNA DOSTAVA</p>
-        <p className="font-bold text-5xl text-[#222222] mt-2 text-center">
+        <p className="font-black text-[#F3274C] sm:text-xl text-xs text-center">EKSPRESNA DOSTAVA</p>
+        <p className="font-bold sm:text-5xl text-2xl text-[#222222] mt-2 text-center">
           BRZO I JEDNOSTAVNO
         </p>
-        <p className="w-[70%] text-center mt-3">
+        <p className="w-[70%] text-center mt-3 text-xs sm:text-base">
           Proces dostave je brz i efikasan, ali može varirati u zavisnosti od
           trenutne gužve u gradu. Ipak, u prosjeku, cijeli proces traje oko
           20-30 minuta, od narudžbe do isporuke – jednostavno i pouzdano!
         </p>
       </div>
 
-      <div className="flex justify-center items-center gap-40 mb-30 flex-wrap px-20">
+      <div className="flex justify-center items-center sm:gap-40 gap-20 mb-30 flex-wrap px-20">
         {stages.map((stage, index) => (
           <div key={index} className="flex flex-col items-center gap-3">
             <img
@@ -43,7 +43,7 @@ const DeliveryProcess = () => {
               alt={`Stage ${index + 1}`}
               className="w-16 h-16"
             />
-            <p className="text-[#222222] text-[15px] text-center font-bold pb-2">
+            <p className="text-[#222222] sm:text-[15px] text-[12px] text-center font-bold pb-2">
               {stage.text}
             </p>
             <img
@@ -57,7 +57,7 @@ const DeliveryProcess = () => {
 
       <div className="relative w-full overflow-hidden">
         <motion.p
-          className="absolute text-sm font-black px-3 py-1 rounded-xl text-white bg-[#F3274C] shadow-md left-[120px]"
+          className="absolute sm:text-sm text-xs font-black px-3 py-1 rounded-xl text-white bg-[#F3274C] shadow-md left-[120px]"
           initial={{ x: "-200px" }}
           animate={{
             x: ["-200px", "30vw", "30vw", "100vw"],

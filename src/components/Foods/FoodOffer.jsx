@@ -71,10 +71,10 @@ const FoodOffer = () => {
   };
 
   return (
-    <div className="flex justify-center items-center flex-col mb-50 relative px-30">
-      <p className="font-black text-5xl text-[#F3274C] mb-6">PONUDA</p>
+    <div className="flex justify-center items-center flex-col sm:mb-50 mb-40 relative px-30">
+      <p className="font-black sm:text-5xl text-2xl text-[#F3274C] mb-6">PONUDA</p>
 
-      <div className="flex flex-row gap-10 font-semibold text-lg mb-20 select-none">
+      <div className="flex flex-row sm:gap-10 gap-0 font-semibold sm:text-lg text-xs mb-20 select-none px-20 flex-wrap justify-center items-center">
         {["Pizza", "Sendvici", "Maslenice", "Combo", "Palacinci", "Pica"].map((cat) => (
           <p
             key={cat}
@@ -132,7 +132,6 @@ const FoodOffer = () => {
         ))}
       </Swiper>
 
-      {/* Navigation Buttons (Placed at the bottom now) */}
       <div className="absolute bottom-[-80px] left-1/2 transform -translate-x-1/2 flex gap-5">
         <button
           onClick={handlePrev}

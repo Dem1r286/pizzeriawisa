@@ -1,56 +1,35 @@
 import React from "react";
-import { MapPin, ForkKnife } from "lucide-react";
-import { Link } from "react-router-dom";
+import HeaderLogo from "./Header/components/HeaderLogo";
+import HeaderLinks from "./Header/components/HeaderLinks";
 
 const Hero = () => {
   return (
-    <div
-      className="flex justify-between items-center flex-col h-[70vh] bg-cover bg-center w-screen mb-30"
-      style={{ backgroundImage: `url(assets/herobackground.webp)` }}
-    >
-      <p
-        className="font-black text-white text-[55px] mt-25 rounded-2xl text-center"
-        style={{ textShadow: "2px 5px 8px rgba(0, 0, 0, 0.8)" }}
-      >
-        Picerija Wisa – Savršenstvo Ukusa u Svakom Zalogaju!
-      </p>
+    <>
+      <div className="flex justify-center items-center w-screen h-[80vh] mb-25 bg-cover bg-center">
+        <div className="fixed top-0 left-0 w-full flex items-center justify-between px-8 py-6 z-10">
+          <HeaderLogo />
+          <HeaderLinks />
+          <div></div>
+        </div>
 
-      <div className="text-center mt-8 px-10 py-6 rounded-2xl mb-100 bg-black/70">
-        <p className="text-white text-xl">
-          Pozovite nas na broj:{" "}
-          <span className="font-bold text-white text-xl">
-            +387 61 205 605 ili +387 62 805 205
-          </span>
-        </p>
-        <p className="text-white text-md mt-2 font-semibold">
-          Radno vrijeme: od ponedjeljka do subote, od 9:00 do 22:00. Dostava na
-          vaša vrata u roku od 30 minuta!
-        </p>
-
-        <div className="flex justify-center items-center flex-col gap-10 mt-7">
-          <div className="flex gap-10">
-            <Link
-              to="/menu"
-              className="cursor-pointer flex flex-row justify-center items-center gap-3 w-[130px] bg-orange-600 h-fit py-2 px-4 text-white font-semibold rounded-xl text-md hover:scale-104 transition-transform duration-300"
-            >
-              Menu
-              <ForkKnife className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1" />
-            </Link>
-
-            <Link
-              to="/menu"
-              className="cursor-pointer flex flex-row justify-center items-center gap-3 w-[130px] bg-orange-600 h-fit py-2 px-4 text-white font-semibold rounded-xl text-md hover:scale-104 transition-transform duration-300"
-            >
-              Lokacija
-              <MapPin className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1" />
-            </Link>
+        <div className="flex justify-between w-screen ml-[15vw]">
+          <div className="flex justify-center items-center flex-col">
+            <div className="flex justify-center items-start flex-col">
+              <p className="text-[#F3274C] self center">Besplatna Dostava</p>
+              <p className="text-black text-[75px]">
+                Vruća <span className="text-[#F3274C] font-medium">Pizza</span>,
+                <br />
+                Besplatna Dostava
+              </p>
+              <p>Radno vrijeme: od ponedjeljka do subote, od 09:00 do 22:00. Dostava na vaša vrata u roku od 30 minuta!</p>
+            </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <img src="assets/herobackground.png" alt="" className="w-[40vw] max-w-[900px]"></img>
           </div>
         </div>
-        <p className="font-black text-orange-500 text-lg mt-6">
-          Besplatna Dostava
-        </p>
       </div>
-    </div>
+    </>
   );
 };
 

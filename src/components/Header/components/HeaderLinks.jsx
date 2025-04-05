@@ -11,7 +11,7 @@ const HeaderLinks = () => {
 
     return (
         <div>
-            <div className="hidden lg:flex justify-center items-center mr-16">
+            <div className="hidden lg:flex justify-center items-center mr-40">
                 <div className="flex items-center gap-20 text-[#22222] text-lg">
                     <p className="cursor-pointer">Početna</p>
 
