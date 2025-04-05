@@ -47,7 +47,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/assets/instagram.webp"
+                  src="assets/instagram.webp"
                   className="w-6 cursor-pointer"
                   alt="Instagram"
                 />
@@ -58,7 +58,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/assets/facebook.webp"
+                  src="assets/facebook.webp"
                   className="w-6 cursor-pointer"
                   alt="Facebook"
                 />
