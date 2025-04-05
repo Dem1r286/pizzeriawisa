@@ -72,7 +72,7 @@ const FoodOffer = () => {
 
   return (
     <div className="flex justify-center items-center flex-col sm:mb-50 mb-40 relative px-30">
-      <p className="font-black sm:text-5xl text-2xl text-[#F3274C] mb-6">PONUDA</p>
+      <p className="font-bold sm:text-[50px] text-2xl text-[#F3274C] mb-6">PONUDA</p>
 
       <div className="flex flex-row sm:gap-10 gap-0 font-semibold sm:text-lg text-xs mb-20 select-none px-20 flex-wrap justify-center items-center">
         {["Pizza", "Sendvici", "Maslenice", "Combo", "Palacinci", "Pica"].map((cat) => (

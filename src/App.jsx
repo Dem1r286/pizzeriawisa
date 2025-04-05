@@ -3,8 +3,10 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
 
+// Lazy load components
 const ComboPackages = lazy(() => import("./components/ComboPackages/ComboPackages"));
 const DeliveryProcess = lazy(() => import("./components/DeliveryProcess"));
+const Header = lazy(() => import("./components/Header/Header"));
 const FoodOffer = lazy(() => import("./components/Foods/FoodOffer"));
 const Hero = lazy(() => import("./components/Hero"));
 const ImageLayout = lazy(() => import("./components/ImageLayout"));
@@ -29,13 +31,20 @@ const FadeInSection = ({ children }) => {
 function App() {
   return (
     <Router>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col mt-[60px] z-1">
+        {/* Wrap Header in Suspense */}
+        <Suspense fallback={<div>Loading Header...</div>}>
+          <Header />
+        </Suspense>
+        
         <Routes>
           <Route
             path="/"
             element={
               <>
+                <Suspense fallback={<div>Loading Hero...</div>}>
                   <Hero />
+                </Suspense>
                 <Suspense fallback={<div>Loading Food Offer...</div>}>
                   <FoodOffer />
                 </Suspense>
@@ -66,7 +75,8 @@ function App() {
             </Suspense>
           } />
         </Routes>
-        
+
+        {/* Wrap Footer in Suspense */}
         <Suspense fallback={<div>Loading Footer...</div>}>
           <Footer />
         </Suspense>
@@ -76,4 +86,3 @@ function App() {
 }
 
 export default App;
-
