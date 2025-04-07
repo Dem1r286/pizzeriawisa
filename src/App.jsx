@@ -39,7 +39,7 @@ function App() {
         
         <Routes>
           <Route
-            path="/"
+            path="/pizzeria-wisa"
             element={
               <>
                 <Suspense fallback={<div>Loading Hero...</div>}>
