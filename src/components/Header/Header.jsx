@@ -14,7 +14,7 @@ const Header = () => {
       <NavBar />
       <div></div>
       
-      <div className="flex lg:hidden items-center gap-6 p-2 bg-white rounded-xl shadow-md border-2 border-[#222222] hover:scale-104 transition-transform duration-300">
+      <div className="flex lg:hidden justify-center items-center gap-6 p-2 mt-5 bg-white rounded-xl shadow-md border-2 border-[#222222] hover:scale-104 transition-transform duration-300">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <Menu size={40} className="" />
           </button>

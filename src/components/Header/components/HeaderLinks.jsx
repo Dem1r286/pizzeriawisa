@@ -34,7 +34,7 @@ const HeaderLinks = () => {
           >
             Kontakt
           </button>
-          <Link
+          <Link 
             to="/menu"
             className="cursor-pointer text-white font-semibold bg-[#F3274C] rounded-xl py-1 px-4 hover:scale-105 transition-transform duration-300"
           >

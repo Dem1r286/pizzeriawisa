@@ -86,7 +86,7 @@ const Testimonials = () => {
       <div className="flex justify-center items-center flex-col">
         <Swiper
           modules={[Autoplay]}
-          className="w-[350px] sm:w-[1000px]"
+          className="w-[400px] md:w-[1000px]"
           spaceBetween={60}
           autoplay={{
             delay: 3000,
@@ -96,7 +96,7 @@ const Testimonials = () => {
             0: {
               slidesPerView: 1,
             },
-            640: {
+            768: {
               slidesPerView: 2,
             },
           }}
