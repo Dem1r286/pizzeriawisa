@@ -13,37 +13,37 @@ const FoodOffer = () => {
 
   const foodData = {
     Pizza: [
-      { imageSrc: "assets/combopizza.webp", title: "Wisa Pizza", description: "Sos, sir, suho meso, sudžuka, gljive, pavlaka, origano", price: "8KM", price2: "10KM", price3: "18KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Capricciosa", description: "Sos, sir, šunka, gljive, origano", price: "7KM", price2: "9KM", price3: "17KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Margherita", description: "Sos, sir, origano", price: "6KM", price2: "8KM", price3: "14KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Funghi", description: "Sos, sir, gljive, origano", price: "6KM", price2: "8KM", price3: "14KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Bosanska Pizza", description: "Sos, sir, suho meso, gljive, origano", price: "8KM",  price2: "10KM", price3: "18KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Mexicana Pizza", description: "Sos, sir, ljuta sudžuka, gljive, origano", price: "8KM", price2: "10KM", price3: "18KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Al Tonno Pizza", description: "Sos, sir, tuna, masline, origano", price: "7KM", price2: "9KM", price3: "17KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Piletina Pizza", description: "Sos, sir, piletina, gljive, origano", price: "8KM", price2: "10KM", price3: "18KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Vegeteriana Pizza", description: "Sos, sir, gljive, masline, kukuruz, paprika, origano", price: "7KM", price2: "9KM", price3: "17KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Sarajevo Pizza", description: "Sos, sir, gljive, masline, kukuruz, paprika, origano", price: "7KM", price2: "9KM", price3: "17KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Quattro Formagio Pizza", description: "Sos, edamer, mozzarela, dimljeni sir, gorgonzola, origano", price: "8KM", price2: "10KM", price3: "18KM" },
-      { imageSrc: "assets/combopizza.webp", title: "Doner Pizza", description: "Sos, sir, doner, doner sos, origano", price: "8KM", price2: "10KM", price3: "18KM"},
+      { imageSrc: "assets/foodImages/wisapizza.png", title: "Wisa Pizza", description: "Sos, sir, suho meso, sudžuka, gljive, pavlaka, origano", price: "8KM", price2: "10KM", price3: "18KM" },
+      { imageSrc: "assets/foodImages/capricciosapizza.png", title: "Capricciosa", description: "Sos, sir, šunka, gljive, origano", price: "7KM", price2: "9KM", price3: "17KM" },
+      { imageSrc: "assets/foodImages/margheritapizza.png", title: "Margherita", description: "Sos, sir, origano", price: "6KM", price2: "8KM", price3: "14KM" },
+      { imageSrc: "assets/foodImages/funghipizza.png", title: "Funghi", description: "Sos, sir, gljive, origano", price: "6KM", price2: "8KM", price3: "14KM" },
+      { imageSrc: "assets/foodImages/bosanskapizza.png", title: "Bosanska Pizza", description: "Sos, sir, suho meso, gljive, origano", price: "8KM",  price2: "10KM", price3: "18KM" },
+      { imageSrc: "assets/foodImages/mexicanapizza.png", title: "Mexicana Pizza", description: "Sos, sir, ljuta sudžuka, gljive, origano", price: "8KM", price2: "10KM", price3: "18KM" },
+      { imageSrc: "assets/foodImages/altonnopizza.png", title: "Al Tonno Pizza", description: "Sos, sir, tuna, masline, origano", price: "7KM", price2: "9KM", price3: "17KM" },
+      { imageSrc: "assets/foodImages/piletinapizza.png", title: "Piletina Pizza", description: "Sos, sir, piletina, gljive, origano", price: "8KM", price2: "10KM", price3: "18KM" },
+      { imageSrc: "assets/foodImages/vegeterianapizza.png", title: "Vegeteriana Pizza", description: "Sos, sir, gljive, masline, kukuruz, paprika, origano", price: "7KM", price2: "9KM", price3: "17KM" },
+      { imageSrc: "assets/foodImages/sarajevopizza.png", title: "Sarajevo Pizza", description: "Sos, sir, sudžuka, jaje, origano", price: "7KM", price2: "9KM", price3: "17KM" },
+      { imageSrc: "assets/foodImages/quattropizza.png", title: "Quattro Formagio Pizza", description: "Sos, edamer, mozzarela, dimljeni sir, gorgonzola, origano", price: "8KM", price2: "10KM", price3: "18KM" },
+      { imageSrc: "assets/foodImages/donerpizza.png", title: "Doner Pizza", description: "Sos, sir, doner, doner sos, origano", price: "8KM", price2: "10KM", price3: "18KM"},
     ],
     Sendvici: [
-      { title: "Pileći Sendvič", description: "Domaće pecivo, piletina, namazi, salate", price: "6KM", imageSrc: "assets/sandwich.webp" },
-      { title: "Pileći Sendvič u Sosu od Gljiva", description: "Domaće pecivo, piletina, sos od gljiva, salate", price: "7KM", imageSrc: "assets/sandwich.webp" },
-      { title: "Suho Meso Sendvič", description: "Suho Meso Sendvič", price: "6KM", imageSrc: "assets/sandwich.webp" },
-      { title: "Sudžuka Sendvič", description: "Sendvič sa piletinom", price: "6KM", imageSrc: "assets/sandwich.webp" },
-      { title: "Šunka Sendvič", description: "Sendvič sa piletinom", price: "5KM", imageSrc: "assets/sandwich.webp" },
-      { title: "Tuna Sendvič", description: "Sendvič sa piletinom", price: "6KM", imageSrc: "assets/sandwich.webp" },
-      { title: "Vegeterijanski Sendvič", description: "Sendvič sa piletinom", price: "6KM", imageSrc: "assets/sandwich.webp" },
-      { title: "Doner", description: "Sendvič sa piletinom", price: "7KM", imageSrc: "assets/sandwich.webp" },
-      { title: "Pileća Salata", description: "Sendvič sa piletinom", price: "7KM", imageSrc: "assets/sandwich.webp" },
-      { title: "Tuna Salata", description: "Sendvič sa piletinom", price: "7KM", imageSrc: "assets/sandwich.webp" },
+      { title: "Pileći Sendvič", description: "Domaće pecivo, piletina, namazi, salate", price: "6KM", imageSrc: "assets/foodImages/sendvicpiletina.png" },
+      { title: "Pileći Sendvič u Sosu od Gljiva", description: "Domaće pecivo, piletina, sos od gljiva, salate", price: "7KM", imageSrc: "assets/foodImages/sendvicpiletinagljive.png" },
+      { title: "Suho Meso Sendvič", description: "Suho Meso Sendvič", price: "6KM", imageSrc: "assets/foodImages/sendvicsuhomeso.png" },
+      { title: "Sudžuka Sendvič", description: "Sendvič sa piletinom", price: "6KM", imageSrc: "assets/foodImages/sendvicsudzuka.png" },
+      { title: "Šunka Sendvič", description: "Sendvič sa piletinom", price: "5KM", imageSrc: "assets/foodImages/sendvicsunka.png" },
+      { title: "Tuna Sendvič", description: "Sendvič sa piletinom", price: "6KM", imageSrc: "assets/foodImages/sendvictuna.png" },
+      { title: "Vegeterijanski Sendvič", description: "Sendvič sa piletinom", price: "6KM", imageSrc: "assets/foodImages/sendvicvege.png" },
+      { title: "Doner", description: "Sendvič sa piletinom", price: "7KM", imageSrc: "assets/foodImages/doner.png" },
+      { title: "Pileća Salata", description: "Pileća Salata", price: "7KM", imageSrc: "assets/foodImages/salatapiletina.png" },
+      { title: "Tuna Salata", description: "Tuna Salata", price: "7KM", imageSrc: "assets/foodImages/salatatuna.png" },
     ],
     Maslenice: [
-      { title: "Pileća Maslenica", description: "", price: "9KM", imageSrc: "assets/maslenica.webp" },
-      { title: "Maslenica Suho Meso", description: "", price: "9KM", imageSrc: "assets/maslenica.webp" },
-      { title: "Doner Maslenica", description: "", price: "9KM", imageSrc: "assets/maslenica.webp" },
-      { title: "Uštipci", description: "", price: "9KM", imageSrc: "assets/maslenica.webp" },
-      { title: "Slatki Uštipci", description: "", price: "7KM", imageSrc: "assets/maslenica.webp" },
+      { title: "Pileća Maslenica", description: "", price: "9KM", imageSrc: "assets/foodImages/maslenicapiletina.png" },
+      { title: "Maslenica Suho Meso", description: "", price: "9KM", imageSrc: "assets/foodImages/maslenicapiletina.png" },
+      { title: "Doner Maslenica", description: "", price: "9KM", imageSrc: "assets/foodImages/maslenicapiletina.png" },
+      { title: "Uštipci", description: "", price: "9KM", imageSrc: "assets/foodImages/ustipcislani.png" },
+      { title: "Slatki Uštipci", description: "", price: "7KM", imageSrc: "assets/foodImages/ustipcislatki.png" },
     ],  
     Combo: [
       { title: "Combo 1", description: "Margherita, Funghi", description2: " sok po želji i palačinak", price: "11KM", imageSrc: "assets/maslenica.webp" },
@@ -51,14 +51,14 @@ const FoodOffer = () => {
       { title: "Combo 3", description: "Wisa, Bosanska, Mexicana, Piletina, Doner Pizza, Quattro Formagio", description2: "sok po želji i palačinak", price: "13KM", imageSrc: "assets/maslenica.webp" }
     ],  
     Palacinci: [
-      { title: "Nutella Palačinak 1x", description: "", price: "2KM", imageSrc: "assets/maslenica.webp" },
-      { title: "Čokolada Palačinak 1x", description: "", price: "1.5KM", imageSrc: "assets/maslenica.webp" },
-      { title: "Džem Palačinak 1x", description: "", price: "1.5KM", imageSrc: "assets/maslenica.webp" }
+      { title: "Nutella Palačinak 1x", description: "", price: "2KM", imageSrc: "assets/foodImages/pancake.png" },
+      { title: "Čokolada Palačinak 1x", description: "", price: "1.5KM", imageSrc: "assets/foodImages/pancake.png" },
+      { title: "Džem Palačinak 1x", description: "", price: "1.5KM", imageSrc: "assets/foodImages/pancake.png" }
     ],
     Pica: [
-      { title: "Sokovi", description: "Coca Cola, Coca Cola Zero, Fanta, Ice Tea, Prirodni Sokovi", price: "3KM", imageSrc: "assets/soda.webp" },
-      { title: "Voda", description: "", price: "2KM", imageSrc: "assets/voda.webp" },
-      { title: "Mineralna voda 0.5l", description:"", price: "2KM", imageSrc: "assets/mineralwater.webp" }
+      { title: "Sokovi", description: "Coca Cola, Coca Cola Zero, Fanta, Ice Tea, Prirodni Sokovi", price: "3KM", imageSrc: "assets/foodImages/soda.webp" },
+      { title: "Voda", description: "", price: "2KM", imageSrc: "assets/foodImages/voda.webp" },
+      { title: "Mineralna voda 0.5l", description:"", price: "2KM", imageSrc: "assets/foodImages/mineralwater.webp" }
     ],
   };
 

@@ -6,7 +6,7 @@ const Footer = () => {
     <div id="footer" className="relative w-full text-white mt-40 flex flex-col">
       <Waves />
 
-      <div className="footer-content flex z-10 flex sm:flex-row flex-col justify-center sm:gap-[20vw] gap-10 items-center h-full pb-10">
+      <div className="footer-content flex flex sm:flex-row flex-col justify-center sm:gap-[20vw] gap-10 items-center h-full pb-10">
 
         <div className="flex flex-col gap-10 items-start">
         <div className="flex sm:flex-col flex-row items-start justify-start">
@@ -42,7 +42,7 @@ const Footer = () => {
 
             <div className="flex flex-col gap-4 justify-center self-start mt-2">
               <a
-                href="https://www.instagram.com/zaytuna_bosnia/"
+                href="https://www.instagram.com/pizzawisa/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -53,7 +53,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=61554220794223"
+                href="https://www.facebook.com/pizzawisa/?locale=hr_HR"
                 target="_blank"
                 rel="noopener noreferrer"
               >

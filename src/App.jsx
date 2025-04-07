@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
+import HamburgerMenu from "./components/Header/components/HamburgerMenu";
 
 // Lazy load components
 const ComboPackages = lazy(() => import("./components/ComboPackages/ComboPackages"));
@@ -31,8 +32,7 @@ const FadeInSection = ({ children }) => {
 function App() {
   return (
     <Router>
-      <div className="flex justify-center items-center flex-col mt-[60px] z-1">
-        {/* Wrap Header in Suspense */}
+      <div className="flex justify-center items-center flex-col">
         <Suspense fallback={<div>Loading Header...</div>}>
           <Header />
         </Suspense>

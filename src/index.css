@@ -5,6 +5,13 @@ body {
   font-display: swap;
 }
 
+@layer utilities {
+  .spin-slow {
+    animation: spin 10s linear infinite;
+  }
+}
+
+
 body {
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale; 

@@ -6,7 +6,7 @@ const Menu = ({ handleMenuToggle }) => {
   return (
     <div
       id="menu"
-      className="absolute top-0 left-0 w-screen h-screen bg-[#222222] z-100"
+      className="absolute top-0 left-0 w-screen h-full bg-[#222222] z-100 flex flex-col justify-center items-center overflow-x-hidden"
     >
       <Link
         to="/"
@@ -15,9 +15,28 @@ const Menu = ({ handleMenuToggle }) => {
       >
         <X className="w-10 h-10" />
       </Link>
-      <div className="flex justify-center items-center h-full text-white">
-        <div className="relative px-30 max-w-[1700px]">
-          <img src="/assets/menu.webp" alt="Menu" className="rounded-2xl" />
+      <div className="w-full h-full max-w-screen-xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 py-40">
+          <img
+            src="assets/menus/pizzas.jpg"
+            alt="Menu"
+            className="w-full object-contain"
+          />
+          <img
+            src="assets/menus/drinks.jpg"
+            alt="Menu"
+            className="w-full object-contain"
+          />
+          <img
+            src="assets/menus/sandwiches.png"
+            alt="Menu"
+            className="w-full object-contain"
+          />
+          <img
+            src="assets/menus/other.png"
+            alt="Menu"
+            className="w-full object-contain"
+          />
         </div>
       </div>
     </div>
