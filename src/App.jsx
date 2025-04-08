@@ -17,30 +17,30 @@ const Menu = lazy(() => import("./components/Menu"));
 
 function App() {
   return (
-    <Router>
+    <Router basename="/pizzeria-wisa"> 
       <Suspense fallback={<Loader />}>
         <div className="flex justify-center items-center flex-col">
           <Header />
           <Routes>
             <Route
-              path="/pizzeria-wisa"
-              element={
+              path="/"
+              element={(
                 <>
                   <Hero />
                   <div
                     className="w-full bg-cover bg-center bg-no-repeat"
                     style={{
-                      backgroundImage: "url(assets/other/waves.webp)",
+                      backgroundImage: "url(assets/other/waves.webp)", 
                     }}
                   >
                     <FoodOffer />
                     <DeliveryProcess />
                   </div>
-                    <ComboPackages />
+                  <ComboPackages />
                   <ImageLayout />
                   <Testimonials />
                 </>
-              }
+              )}
             />
             <Route path="/menu" element={<Menu />} />
           </Routes>
