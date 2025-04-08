@@ -10,7 +10,7 @@ const Menu = ({ handleMenuToggle }) => {
       onClick={handleMenuToggle}
     >
       <Link
-        to="/"
+        to="/pizzeria-wisa"
         className="absolute top-10 right-10 text-3xl text-white z-100"
         onClick={handleMenuToggle}
       >
