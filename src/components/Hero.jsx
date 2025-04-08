@@ -24,7 +24,7 @@ const Hero = () => {
       id="homepage"
       className="flex justify-center items-center w-screen xl:h-screen h-screen  bg-cover bg-center pt-40 xl:pt-0"
       style={{
-        backgroundImage: `url('assets/background.webp')`,
+        backgroundImage: "url(assets/other/background.webp)",
         backgroundSize: "cover",
       }}
     >
