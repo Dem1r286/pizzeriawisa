@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <div
       id="homepage"
-      className="flex justify-center items-center w-screen xl:h-screen h-screen  bg-cover bg-center pt-30 xl:pt-0"
+      className="flex justify-center items-center w-screen xl:h-screen h-screen  bg-cover bg-center pt-40 xl:pt-0"
       style={{
         backgroundImage: `url('assets/background.webp')`,
         backgroundSize: "cover",
