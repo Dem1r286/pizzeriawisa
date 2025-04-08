@@ -3,7 +3,7 @@ import Waves from "./components/Waves";
 
 const Footer = () => {
   return (
-    <div id="footer" className="relative w-full text-white mt-40 flex flex-col">
+    <div id="footer" className="relative w-full text-white mt-30 flex flex-col z-2">
       <Waves />
 
       <div className="footer-content flex flex sm:flex-row flex-col justify-center sm:gap-[20vw] gap-10 items-center h-full pb-10">

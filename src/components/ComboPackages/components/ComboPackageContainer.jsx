@@ -22,26 +22,18 @@ const ComboPackageContainer = () => {
 <div className="flex justify-center items-center flex-row flex-wrap sm:gap-[3vw] gap-20">
       <FadeInSection delay={0.2}>
         <ComboCard
-          imageSrc="/assets/combopizza.webp"
-          title="COMBO 1"
-          description="Margherita, Funghi"
-          price="11KM"
+          imageSrc="/assets/combos/combo1.png"
         />
       </FadeInSection>
       <FadeInSection delay={0.4}>
         <ComboCard
-          imageSrc="/assets/ImageGallery/pizza2.webp"
-          title="COMBO 2"
-          description="Capricciosa, Sarajevo, Vegeteriana, Al Tonno"
-          price="12KM"
+          imageSrc="/assets/combos/combo2.png"
+
         />
       </FadeInSection>
       <FadeInSection delay={0.6}>
         <ComboCard
-          imageSrc="/assets/ImageGallery/pizza3.webp"
-          title="COMBO 3"
-          description="Wisa, Bosanska, Mexicana, Piletina, Doner Pizza, Quattro Formagio"
-          price="13KM"
+          imageSrc="/assets/combos/combo3.png"
         />
       </FadeInSection>
     </div>

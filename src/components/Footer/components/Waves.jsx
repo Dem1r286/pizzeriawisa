@@ -13,19 +13,19 @@ const Waves = ({ customStyles }) => {
   const defaultStyles = [
     {
       height: {
-        base: "32rem",
-        sm: "45rem",
+        base: "33rem",
+        sm: "44rem",
       },
-      opacity: 0.6,
+      opacity: 0.5,
       color: "#222222",
       options: { amplitude: 10, speed: 0.2, points: 6 },
     },
     {
       height: {
-        base: "30rem",
-        sm: "42rem",
+        base: "32rem",
+        sm: "43rem",
       },
-      opacity: 0.8,
+      opacity: 0.9,
       color: "#222222",
       options: { amplitude: 20, speed: 0.1, points: 5 },
     },

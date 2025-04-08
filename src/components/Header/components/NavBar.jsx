@@ -27,7 +27,7 @@ const NavBar= () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-50 hidden lg:flex justify-center items-center bg-white rounded-b-xl px-10 py-4 shadow-md border-l-2 border-r-2 border-b-2 border-[#222222] transition-transform duration-300 ${
+        className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-50 hidden lg:flex justify-center items-center bg-white rounded-b-xl px-10 py-4 shadow-lg border-l-2 border-r-2 border-b-2 border-[#222222] transition-transform duration-300 ${
           show ? "translate-y-0" : "-translate-y-full"
         }`}
       >

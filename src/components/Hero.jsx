@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <div
       id="homepage"
-      className="flex justify-center items-center w-screen xl:h-screen h-screen mb-15 md:mb-25 bg-cover bg-center pt-40 xl:pt-0"
+      className="flex justify-center items-center w-screen xl:h-screen h-screen  bg-cover bg-center pt-40 xl:pt-0"
       style={{
         backgroundImage: `url('assets/background.svg')`,
         backgroundSize: "cover",
@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="flex justify-between w-full h-full ml-0 xl:ml-[10vw] flex-col xl:flex-row lg:px-0">
         {/* Left Side Content */}
         <div className="flex justify-center items-center flex-col">
-          <div className="flex justify-center items-start flex-col px-10 lg:px-20 py-10 backdrop-blur-sm bg-white/70 rounded-2xl">
+          <div className="flex justify-center items-start flex-col px-10 lg:px-20 py-10 backdrop-blur-sm bg-white/70 rounded-2xl shadow-xl">
             <p className="text-black text-[32px] sm:text-[40px] md:text-[50px] lg:text-[50px] xl:text-[70px] 2xl:text-[80px]">
               Vruća <span className="text-[#F3274C] font-semibold">Pizza</span>,{" "}
               <br />

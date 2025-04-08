@@ -71,83 +71,94 @@ const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="select-none flex flex-col justify-center items-center bg-gray-200 px-40 pt-20 pb-20 rounded-xl mt-20 shadow-lg mt-60 mb-60"
+      style={{
+        backgroundImage: `url('assets/background.svg')`,
+        backgroundSize: "cover",
+      }}
+      className="select-none flex flex-col w-screen h-screen justify-center items-center px-40"
     >
-      <div className="flex justify-center items-center flex-col mb-10 gap-2">
-        <h2 className="sm:text-3xl text-xl font-semibold text-black text-center">
-          Šta naši gosti kažu o nama?
-        </h2>
-        <p className="text-center font-medium sm:text-sm text-xs text-gray-700">
-          Pročitajte utiske naših gostiju koji su uživali u vrhunskim jelima i
-          prijatnoj atmosferi.
-        </p>
-      </div>
+      <div className="bg-black/90 px-20 py-10 rounded-xl">
+        <div className="flex justify-center items-center flex-col mb-10 gap-2">
+          <h2 className="sm:text-3xl text-xl font-semibold text-white text-center">
+            Šta naši gosti kažu o nama?
+          </h2>
+          <p className="text-center font-medium sm:text-sm text-xs text-white">
+            Pročitajte utiske naših gostiju koji su uživali u vrhunskim jelima i
+            prijatnoj atmosferi.
+          </p>
+        </div>
 
-      <div className="flex justify-center items-center flex-col">
-        <Swiper
-          modules={[Autoplay]}
-          className="w-[400px] md:w-[1000px]"
-          spaceBetween={60}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-          }}
-        >
-          {testimonials.map((testimonial, index) => (
-            <SwiperSlide
-              key={index}
-              className="bg-white rounded-xl shadow-xl p-6"
-              style={{
-                height: "250px",
-                width: "100%",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              <div className="flex flex-col justify-between flex-grow">
-                <div className="flex items-center gap-4">
-                  <div>
-                    <h3 className="font-bold sm:text-md text-sm">
-                      {testimonial.name}
-                    </h3>
-                    <p className="text-sm text-gray-500 sm:text-md text-xs">
-                      {testimonial.date}
-                    </p>
+        <div className="flex justify-center items-center flex-col">
+          <Swiper
+            modules={[Autoplay]}
+            className="w-[400px] md:w-[1000px]"
+            spaceBetween={60}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+            }}
+          >
+            {testimonials.map((testimonial, index) => (
+              <SwiperSlide
+                key={index}
+                className="bg-white rounded-xl shadow-xl p-6"
+                style={{
+                  height: "250px",
+                  width: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <div className="flex flex-col justify-between flex-grow">
+                  <div className="flex items-center gap-4">
+                    <div>
+                      <h3 className="font-bold sm:text-md text-sm">
+                        {testimonial.name}
+                      </h3>
+                      <p className="text-sm text-gray-500 sm:text-md text-xs">
+                        {testimonial.date}
+                      </p>
+                    </div>
+                  </div>
+
+                  <p className="mt-4 text-gray-600 mb-10 text-sm sm:text-base">
+                    {testimonial.description}
+                  </p>
+
+                  <div className="mt-auto flex justify-start">
+                    <Rating
+                      value={4.4}
+                      readOnly
+                      precision={0.5}
+                      size="medium"
+                    />
                   </div>
                 </div>
-
-                <p className="mt-4 text-gray-600 mb-10 text-sm sm:text-base">
-                  {testimonial.description}
-                </p>
-
-                <div className="mt-auto flex justify-start">
-                  <Rating value={4.4} readOnly precision={0.5} size="medium" />
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      <div className="flex justify-center items-center flex-col mt-10 gap-2">
-        <div className="flex flex-row justify-center items-center gap-4">
-          <p className="font-semibold mt-1 sm:text-md text-sm">
-            Google Ocjena 4.4
-          </p>
-          <Rating value={4.4} readOnly precision={0.5} size="medium" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-        <p className="font-semibold sm:text-xs text-[11px]">
-          176 Google recenzija
-        </p>
+
+        <div className="flex justify-center items-center flex-col mt-10 gap-2 text-white">
+          <div className="flex flex-row justify-center items-center gap-4">
+            <p className="font-semibold mt-1 sm:text-md text-sm">
+              Google Ocjena 4.4
+            </p>
+            <Rating value={4.4} readOnly precision={0.5} size="medium bg-white rounded-xl p-1" />
+          </div>
+          <p className="font-semibold sm:text-xs text-[11px]">
+            176 Google recenzija
+          </p>
+        </div>
       </div>
     </div>
   );
