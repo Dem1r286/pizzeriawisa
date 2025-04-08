@@ -19,21 +19,21 @@ const FadeInSection = ({ children, delay = 0 }) => {
 
 const ComboPackageContainer = () => {
   return (
-<div className="flex justify-center items-center flex-row flex-wrap sm:gap-[3vw] gap-20">
+<div className="flex justify-center items-center flex-col md:flex-row flex-wrap gap-[8vw] sm:gap-20">
       <FadeInSection delay={0.2}>
         <ComboCard
-          imageSrc="/assets/combos/combo1.png"
+          imageSrc="/assets/combos/combo1.webp"
         />
       </FadeInSection>
       <FadeInSection delay={0.4}>
         <ComboCard
-          imageSrc="/assets/combos/combo2.png"
+          imageSrc="/assets/combos/combo2.webp"
 
         />
       </FadeInSection>
       <FadeInSection delay={0.6}>
         <ComboCard
-          imageSrc="/assets/combos/combo3.png"
+          imageSrc="/assets/combos/combo3.webp"
         />
       </FadeInSection>
     </div>

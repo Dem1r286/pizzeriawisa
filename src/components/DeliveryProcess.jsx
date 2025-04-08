@@ -56,29 +56,10 @@ const DeliveryProcess = () => {
       </div>
 
       <div className="relative w-full overflow-hidden">
-        <motion.p
-          className="absolute sm:text-sm text-xs font-black px-3 py-1 rounded-xl text-white bg-[#F3274C] shadow-md left-[120px]"
-          initial={{ x: "-200px" }}
-          animate={{
-            x: ["-200px", "30vw", "30vw", "100vw"],
-          }}
-          transition={{
-            x: {
-              times: [0, 0.4, 0.5, 1],
-              repeat: Infinity,
-              repeatType: "loop",
-              duration: 3,
-              ease: ["easeOut", "linear", "easeIn"],
-            },
-          }}
-        >
-          brzi kao munjaaaaa!
-        </motion.p>
-
         <motion.img
           src="assets/DeliveryProcessIcons/scooterdelivery.webp"
           alt="Scooter"
-          className="w-32 md:w-40"
+          className="w-28 md:w-40"
           initial={{ x: "-200px", opacity: 1 }}
           animate={{
             x: ["-200px", "30vw", "30vw", "100vw"],

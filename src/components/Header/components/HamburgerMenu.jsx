@@ -32,7 +32,7 @@ const HamburgerMenu = ({ isMenuOpen, setIsMenuOpen }) => {
       }`}
     >
       <div className="w-full flex items-center justify-between p-8">
-        <img src="/assets/wisalogohamburger.svg" className="w-20" alt="Logo" />
+        <img src="/assets/wisalogohamburger.webp" className="w-20" alt="Logo" />
 
         <div className="flex lg:hidden items-center gap-6 p-2 bg-white rounded-xl shadow-md border-2 border-[#222222] hover:scale-104 transition-transform duration-300">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>

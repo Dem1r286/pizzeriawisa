@@ -22,17 +22,17 @@ const Hero = () => {
   return (
     <div
       id="homepage"
-      className="flex justify-center items-center w-screen xl:h-screen h-screen  bg-cover bg-center pt-40 xl:pt-0"
+      className="flex justify-center items-center w-screen xl:h-screen h-screen  bg-cover bg-center pt-30 xl:pt-0"
       style={{
-        backgroundImage: `url('assets/background.svg')`,
+        backgroundImage: `url('assets/background.webp')`,
         backgroundSize: "cover",
       }}
     >
-      <div className="flex justify-between w-full h-full ml-0 xl:ml-[10vw] flex-col xl:flex-row lg:px-0">
+      <div className="flex justify-between w-full h-full ml-0 xl:ml-[5vw] flex-col xl:flex-row lg:px-0">
         {/* Left Side Content */}
         <div className="flex justify-center items-center flex-col">
           <div className="flex justify-center items-start flex-col px-10 lg:px-20 py-10 backdrop-blur-sm bg-white/70 rounded-2xl shadow-xl">
-            <p className="text-black text-[32px] sm:text-[40px] md:text-[50px] lg:text-[50px] xl:text-[70px] 2xl:text-[80px]">
+            <p className="text-black text-[25px] sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] 3xl:text-[80px]">
               Vruća <span className="text-[#F3274C] font-semibold">Pizza</span>,{" "}
               <br />
               Besplatna Dostava
@@ -87,8 +87,8 @@ const Hero = () => {
           <img
             src={
               screenWidth > 1280
-                ? "assets/pizzaplate3.svg"
-                : "assets/pizzaplate2.svg"
+                ? "assets/pizzaplate3.webp"
+                : "assets/pizzaplate2.webp"
             }
             alt="plate"
             className="lg:max-w-[1000px] xl:max-w-[700px] xl:w-[35vw]"

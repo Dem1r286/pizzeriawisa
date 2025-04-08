@@ -7,6 +7,7 @@ const Menu = ({ handleMenuToggle }) => {
     <div
       id="menu"
       className="absolute top-0 left-0 w-screen h-full bg-[#222222] z-100 flex flex-col justify-center items-center overflow-x-hidden"
+      onClick={handleMenuToggle}
     >
       <Link
         to="/"
@@ -18,22 +19,22 @@ const Menu = ({ handleMenuToggle }) => {
       <div className="w-full h-full max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 py-40">
           <img
-            src="assets/menus/pizzas.jpg"
+            src="assets/menus/pizzas.webp"
             alt="Menu"
             className="w-full object-contain"
           />
           <img
-            src="assets/menus/drinks.jpg"
+            src="assets/menus/drinks.webp"
             alt="Menu"
             className="w-full object-contain"
           />
           <img
-            src="assets/menus/sandwiches.png"
+            src="assets/menus/sandwiches.webp"
             alt="Menu"
             className="w-full object-contain"
           />
           <img
-            src="assets/menus/other.png"
+            src="assets/menus/other.webp"
             alt="Menu"
             className="w-full object-contain"
           />

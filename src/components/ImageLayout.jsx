@@ -4,32 +4,32 @@ const ImageLayout = () => {
   return (
     <div className="w-screen grid grid-cols-2 md:grid-cols-3 gap-0">
       <img
-        src="assets/ImageGallery/image4.jpg"
+        src="assets/ImageGallery/image1.webp"
         alt="Pizza"
         className="w-full object-cover h-full"
       />
       <img
-        src="assets/ImageGallery/image3.png"
+        src="assets/ImageGallery/image2.webp"
         alt="Food container"
         className="w-full object-cover h-full"
       />
       <img
-        src="assets/ImageGallery/image7.jpg"
+        src="assets/ImageGallery/image3.webp"
         alt="Pizza close-up"
         className="w-full object-cover h-full"
       />
       <img
-        src="assets/ImageGallery/image8.jpg"
+        src="assets/ImageGallery/image4.webp"
         alt="Focaccia bread"
         className="w-full object-cover h-full"
       />
       <img
-        src="assets/ImageGallery/image5.jpg"
+        src="assets/ImageGallery/image5.webp"
         alt="More pizza"
         className="w-full object-cover h-full"
       />
       <img
-        src="assets/ImageGallery/image9.jpg"
+        src="assets/ImageGallery/image6.webp"
         alt="Delicious dish"
         className="w-full object-cover h-full"
       />

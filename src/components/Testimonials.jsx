@@ -72,7 +72,7 @@ const Testimonials = () => {
     <div
       id="testimonials"
       style={{
-        backgroundImage: `url('assets/background.svg')`,
+        backgroundImage: `url('assets/background.webp')`,
         backgroundSize: "cover",
       }}
       className="select-none flex flex-col w-screen h-screen justify-center items-center px-40"
@@ -91,7 +91,7 @@ const Testimonials = () => {
         <div className="flex justify-center items-center flex-col">
           <Swiper
             modules={[Autoplay]}
-            className="w-[400px] md:w-[1000px]"
+            className="w-[300px] sm:w-[350px] md:w-[550px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1200px]"
             spaceBetween={60}
             autoplay={{
               delay: 3000,
@@ -111,11 +111,11 @@ const Testimonials = () => {
                 key={index}
                 className="bg-white rounded-xl shadow-xl p-6"
                 style={{
-                  height: "250px",
+                  height: "300px",
                   width: "100%",
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "center",
+                  justifyContent: "center"
                 }}
               >
                 <div className="flex flex-col justify-between flex-grow">
@@ -130,7 +130,7 @@ const Testimonials = () => {
                     </div>
                   </div>
 
-                  <p className="mt-4 text-gray-600 mb-10 text-sm sm:text-base">
+                  <p className="mt-4 text-gray-600 mb-10 text-sm">
                     {testimonial.description}
                   </p>
 
@@ -153,7 +153,7 @@ const Testimonials = () => {
             <p className="font-semibold mt-1 sm:text-md text-sm">
               Google Ocjena 4.4
             </p>
-            <Rating value={4.4} readOnly precision={0.5} size="medium bg-white rounded-xl p-1" />
+            <Rating value={4.4} readOnly precision={0.5} size="medium" />
           </div>
           <p className="font-semibold sm:text-xs text-[11px]">
             176 Google recenzija
