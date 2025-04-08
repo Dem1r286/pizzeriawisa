@@ -87,8 +87,8 @@ const Hero = () => {
           <img
             src={
               screenWidth > 1280
-                ? "/assets/other/pizzaplate3.webp"
-                : "/assets/other/pizzaplate2.webp"
+                ? "assets/other/pizzaplate3.webp"
+                : "assets/other/pizzaplate2.webp"
             }
             alt="plate"
             className="lg:max-w-[1000px] xl:max-w-[700px] xl:w-[35vw]"
