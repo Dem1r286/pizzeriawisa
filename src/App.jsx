@@ -23,7 +23,7 @@ function App() {
           <Header />
           <Routes>
             <Route
-              path="/"
+              path="/pizzeria-wisa"
               element={
                 <>
                   <Hero />
