@@ -22,18 +22,18 @@ const ComboPackageContainer = () => {
 <div className="flex justify-center items-center flex-col md:flex-row flex-wrap gap-[8vw] sm:gap-20">
       <FadeInSection delay={0.2}>
         <ComboCard
-          imageSrc="assets/combos/combo1.webp"
+          imageSrc="/assets/combos/combo1.webp"
         />
       </FadeInSection>
       <FadeInSection delay={0.4}>
         <ComboCard
-          imageSrc="assets/combos/combo2.webp"
+          imageSrc="/assets/combos/combo2.webp"
 
         />
       </FadeInSection>
       <FadeInSection delay={0.6}>
         <ComboCard
-          imageSrc="assets/combos/combo3.webp"
+          imageSrc="/assets/combos/combo3.webp"
         />
       </FadeInSection>
     </div>

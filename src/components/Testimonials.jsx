@@ -72,7 +72,7 @@ const Testimonials = () => {
     <div
       id="testimonials"
       style={{
-        backgroundImage: `url('assets/background.webp')`,
+        backgroundImage: `url('assets/other/background.webp')`,
         backgroundSize: "cover",
       }}
       className="select-none flex flex-col w-screen h-screen justify-center items-center px-40"

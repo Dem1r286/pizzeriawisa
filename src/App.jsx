@@ -30,7 +30,7 @@ function App() {
                   <div
                     className="w-full bg-cover bg-center bg-no-repeat"
                     style={{
-                      backgroundImage: "url(assets/waves.svg)",
+                      backgroundImage: "url(assets/other/waves.webp)",
                     }}
                   >
                     <FoodOffer />
