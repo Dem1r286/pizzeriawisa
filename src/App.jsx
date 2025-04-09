@@ -18,7 +18,7 @@ const HeaderLogo = lazy(() => import("./components/Header/components/HeaderLogo"
 
 function App() {
   return (
-    <Router basename="/pizzeriaWisa"> 
+    <Router basename="/"> 
       <Suspense fallback={<Loader />}>
         <div className="flex justify-center items-center flex-col">
           <Header />
