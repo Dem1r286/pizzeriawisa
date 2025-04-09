@@ -363,26 +363,26 @@ const FoodOffer = () => {
                         <>
                         <div className="flex justify-center items-center flex-col">
                             <p className="text-xs">mala</p>
-                            <p className="text-[19px] font-black text-[#f3274c]">
+                            <p className="text-[15px] md:text-[19px] font-black text-[#f3274c]">
                               {item.price}
                             </p>
                           </div>
                           <div className="flex justify-center items-center flex-col">
                             <p className="text-xs">srednja</p>
-                            <p className="text-[19px] font-black text-[#f3274c]">
+                            <p className="text-[15px] md:text-[19px] font-black text-[#f3274c]">
                               {item.price2}
                             </p>
                           </div>
                           <div className="flex justify-center items-center flex-col">
                             <p className="text-xs">jumbo</p>
-                            <p className="text-[19px] font-black text-[#f3274c]">
+                            <p className="text-[15px] md:text-[19px] font-black text-[#f3274c]">
                               {item.price3}
                             </p>
                           </div>
                         </>
                       ) : (
                         <div className="flex justify-center items-start flex-col w-full">
-                          <p className="text-[14px] md:text-[20px] font-black text-[#f3274c]">
+                          <p className="text-[15px] md:text-[19px] font-black text-[#f3274c]">
                             {item.price}
                           </p>
                         </div>
