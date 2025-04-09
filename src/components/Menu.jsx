@@ -13,10 +13,10 @@ const Menu = ({ handleMenuToggle }) => {
 
   return (
     <div
-      id="menu"
-      className="fixed top-0 left-0 w-screen h-full bg-[#222222] z-[100] flex flex-col justify-center items-center"
-      onClick={handleMenuToggle}
-    >
+    id="menu"
+    className="fixed top-0 left-0 w-screen h-screen overflow-y-auto bg-[#222222] z-[100] flex flex-col items-center"
+    onClick={handleMenuToggle}
+  >  
       <Link
         to="/"
         className="absolute top-10 right-10 text-3xl text-white z-[100]"
