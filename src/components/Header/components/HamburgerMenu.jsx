@@ -56,7 +56,7 @@ const HamburgerMenu = ({ isMenuOpen, setIsMenuOpen }) => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center flex lg:hidden mb-60 text-white">
+      <div className="flex flex-col items-center flex lg:hidden mb-40 text-white">
         <HeaderLinks onLinkClick={() => setIsMenuOpen(false)} />
       </div>
       <div></div>
