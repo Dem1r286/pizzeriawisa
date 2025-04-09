@@ -273,7 +273,7 @@ const FoodOffer = () => {
     {
       title: "Palačinak 1x",
       description: "Nutella, Čokolada, Džem",
-      price: "2KM",
+      price: "2KM / 1.5KM",
       imageSrc: "assets/foodImages/pancake.webp",
     },
     {
