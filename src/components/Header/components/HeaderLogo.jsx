@@ -17,7 +17,7 @@ const HeaderLogo = () => {
       <img
         src="assets/other/wisalogo.svg"
         alt="logo"
-        className="w-22 sm:w-26 lg:w-28"
+        className="w-22 sm:w-26 2xl:w-28"
       />
     </div>
   );

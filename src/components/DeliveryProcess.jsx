@@ -35,7 +35,7 @@ const DeliveryProcess = () => {
         </p>
       </div>
 
-      <div className="flex justify-center items-center sm:gap-40 gap-20 mb-30 flex-wrap px-20">
+      <div className="flex justify-center items-center gap-20 2xl:gap-30 mb-30 px-20 flex-wrap">
         {stages.map((stage, index) => (
           <div key={index} className="flex flex-col items-center gap-3">
             <img

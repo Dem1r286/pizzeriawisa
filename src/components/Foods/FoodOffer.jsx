@@ -24,7 +24,7 @@ const FoodOffer = () => {
       } else if (width < 1280) {
         setVisibleCount(3);
       } else if (width < 1536) {
-        setVisibleCount(4);
+        setVisibleCount(3);
       } else if (width < 1800) {
         setVisibleCount(4);
       } else {
@@ -424,7 +424,7 @@ const FoodOffer = () => {
           className="cursor-pointer flex flex-row justify-center items-center gap-3 w-fit bg-gradient-to-b from-[#F3274C] to-[#d4203f] h-fit py-2 px-4 text-white font-semibold shadow-lg rounded-xl text-sm sm:text-lg hover:scale-104 transition-transform duration-300"
           style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)" }}
         >
-          Pogledajte Menu
+          Pogledajte Meni
           <ForkKnife className="h-4 w-4 transition-transform duration-500 group-hover:translate-x-1" />
         </Link>
       </div>

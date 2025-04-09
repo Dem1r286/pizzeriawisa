@@ -12,7 +12,7 @@ const HeaderLinks = ({ onLinkClick }) => {
   };
 
   return (
-    <div className="flex lg:flex-row flex-col items-center gap-20 text-lg font-semibold">
+    <div className="flex lg:flex-row flex-col items-center gap-20 text-md 2xl:text-lg font-semibold">
       <button
         onClick={() =>
           handleClick(() => {
@@ -54,7 +54,7 @@ const HeaderLinks = ({ onLinkClick }) => {
           if (window.innerWidth < 1024 && onLinkClick) onLinkClick();
         }}
       >
-        Menu
+        Meni
       </Link>
     </div>
   );
