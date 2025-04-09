@@ -39,12 +39,14 @@ const Hero = () => {
         {/* Left Side Content */}
         <div className="flex justify-center items-center flex-col">
           <div className="flex justify-center items-start flex-col px-10 lg:px-20 py-10 backdrop-blur-sm bg-white/70 rounded-2xl shadow-xl">
-            <h1 className="text-black text-[25px] font-semibold sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">
-              Vruća <span className="text-[#F3274C]">Pizza</span>,{" "}
+
+            <h2 className="text-black font-bold text-[13px] md:text-[15px] lg:text-[18px] self-center shadow-md xl:self-start bg-[#f39420] rounded-xl px-4 py-1 text-white mb-2 text-center"
+            style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)" }}>
+              Brza i Besplatna Dostava u Sarajevu</h2>
+
+            <h1 className="text-black text-[25px] font-semibold sm:text-[30px] self-center xl:self-start md:text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">
+             Dobrodošli u Pizzeriju <span className="text-[#F3274C]">Wisu</span>{" "}
             </h1>
-            <h2 className="text-black text-[25px] font-semibold sm:text-[30px] md:text-[30px] 
-            lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">
-              Besplatna Dostava</h2>
 
             <p className="text-[12px] sm:text-[14px] 2xl:text-[17px]">
               Radno vrijeme: od ponedjeljka do subote, od{" "}
