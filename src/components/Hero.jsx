@@ -44,7 +44,7 @@ const Hero = () => {
             style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)" }}>
               Brza i Besplatna Dostava u Sarajevu</h2>
 
-            <h1 className="text-black text-[25px] font-semibold sm:text-[30px] self-center xl:self-start md:text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">
+            <h1 className="text-black text-[25px] font-semibold sm:text-[30px] self-center text-center xl:self-start md:text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">
              Dobrodošli u Pizzeriju <span className="text-[#F3274C]">Wisu</span>{" "}
             </h1>
 
