@@ -27,7 +27,7 @@ const ComboPackages = () => {
           </p>
         </div>
         <FadeInSection>
-          <p className="text-white font-black sm:text-5xl text-2xl mb-3" style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)" }}>COMBO PAKETI</p>
+          <h5 className="text-white font-black sm:text-5xl text-2xl mb-3" style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)" }}>COMBO PAKETI</h5>
         </FadeInSection>
         <div className="flex justify-center items-center flex-row gap-6">
           <p className="font-bold sm:text-lg text-sm bg-white rounded-xl py-1 px-6 text-[#222222]">

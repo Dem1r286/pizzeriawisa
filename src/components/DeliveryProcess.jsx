@@ -25,9 +25,9 @@ const DeliveryProcess = () => {
     <div className="flex justify-center items-center w-screen flex-col">
       <div className="flex justify-center items-center flex-col mb-20">
         <p className="font-black text-[#F3274C] sm:text-xl text-xs text-center">EKSPRESNA DOSTAVA</p>
-        <p className="font-bold sm:text-5xl text-2xl text-[#222222] mt-2 text-center">
+        <h4 className="font-bold sm:text-5xl text-2xl text-[#222222] mt-2 text-center">
           BRZO I JEDNOSTAVNO
-        </p>
+        </h4>
         <p className="w-[70%] text-center mt-3 text-xs sm:text-base">
           Proces dostave je brz i efikasan, ali može varirati u zavisnosti od
           trenutne gužve u gradu. Ipak, u prosjeku, cijeli proces traje oko
