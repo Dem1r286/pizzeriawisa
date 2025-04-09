@@ -14,13 +14,15 @@ const ImageLayout = lazy(() => import("./components/ImageLayout"));
 const Footer = lazy(() => import("./components/Footer/Footer"));
 const Testimonials = lazy(() => import("./components/Testimonials"));
 const Menu = lazy(() => import("./components/Menu"));
+const HeaderLogo = lazy(() => import("./components/Header/components/HeaderLogo"));
 
 function App() {
   return (
-    <Router basename="/pizzeria-wisa"> 
+    <Router basename="/"> 
       <Suspense fallback={<Loader />}>
         <div className="flex justify-center items-center flex-col">
           <Header />
+          <HeaderLogo />
           <Routes>
             <Route
               path="/"

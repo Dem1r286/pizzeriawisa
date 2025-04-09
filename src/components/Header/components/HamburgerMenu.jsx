@@ -31,18 +31,14 @@ const HamburgerMenu = ({ isMenuOpen, setIsMenuOpen }) => {
         isMenuOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
-      <div className="w-full flex items-center justify-between p-8">
-        <img src="assets/other/wisalogohamburger.webp" className="w-20" alt="Logo" />
-
+      <div className="w-full flex items-center justify-end p-6">
         <div className="flex lg:hidden items-center gap-6 p-2 bg-white rounded-xl shadow-md border-2 border-[#222222] hover:scale-104 transition-transform duration-300">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <X size={40} className="text-black" />
-          </button>
+            <X onClick={() => setIsMenuOpen(!isMenuOpen)} size={30} className="text-black" />
         </div>
       </div>
 
       <div className="flex flex-col items-center flex lg:hidden mb-60 text-white">
-          <HeaderLinks />
+        <HeaderLinks onLinkClick={() => setIsMenuOpen(false)} />
       </div>
       <div></div>
       <div className="absolute bottom-0 w-full">

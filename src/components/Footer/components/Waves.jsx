@@ -54,7 +54,7 @@ const Waves = ({ customStyles }) => {
             bottom: "0",
             zIndex: "-1",
             opacity: style.opacity,
-            height: windowWidth < 640 ? style.height.sm : style.height.base, // 👈 THIS LINE
+            height: windowWidth < 768 ? style.height.sm : style.height.base,
           }}
           options={style.options}
         />

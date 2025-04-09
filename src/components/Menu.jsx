@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Menu = ({ handleMenuToggle }) => {
+  useEffect(() => {
+    document.body.classList.add("menu-open");
+
+    return () => {
+      document.body.classList.remove("menu-open");
+    };
+  }, []);
+
   return (
     <div
       id="menu"
-      className="absolute top-0 left-0 w-screen h-full bg-[#222222] z-100 flex flex-col justify-center items-center overflow-x-hidden"
+      className="fixed top-0 left-0 w-screen h-full bg-[#222222] z-[100] flex flex-col justify-center items-center"
       onClick={handleMenuToggle}
     >
       <Link
-        to="/pizzeria-wisa"
-        className="absolute top-10 right-10 text-3xl text-white z-100"
+        to="/"
+        className="absolute top-10 right-10 text-3xl text-white z-[100]"
         onClick={handleMenuToggle}
       >
         <X className="w-10 h-10" />
@@ -19,22 +27,22 @@ const Menu = ({ handleMenuToggle }) => {
       <div className="w-full h-full max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 py-40">
           <img
-            src="/pizzeria-wisa/assets/menus/pizzas.webp"
+            src="/assets/menus/pizzas.webp"
             alt="Menu"
             className="w-full object-contain"
           />
           <img
-            src="/pizzeria-wisa/assets/menus/drinks.webp"
+            src="/assets/menus/drinks.webp"
             alt="Menu"
             className="w-full object-contain"
           />
           <img
-            src="/pizzeria-wisa/assets/menus/sandwiches.webp"
+            src="/assets/menus/sandwiches.webp"
             alt="Menu"
             className="w-full object-contain"
           />
           <img
-            src="/pizzeria-wisa/assets/menus/other.webp"
+            src="/assets/menus/other.webp"
             alt="Menu"
             className="w-full object-contain"
           />

@@ -7,7 +7,7 @@ body {
 
 @layer utilities {
   .spin-slow {
-    animation: spin 10s linear infinite;
+    animation: spin 6s linear infinite;
   }
 }
 

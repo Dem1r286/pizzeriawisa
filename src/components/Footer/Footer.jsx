@@ -3,13 +3,13 @@ import Waves from "./components/Waves";
 
 const Footer = () => {
   return (
-    <div id="footer" className="relative w-full text-white mt-30 flex flex-col z-2">
+    <div id="footer" className="relative w-full text-white mt-10 flex flex-col z-2">
       <Waves />
 
-      <div className="footer-content flex flex sm:flex-row flex-col justify-center sm:gap-[20vw] gap-10 items-center h-full pb-10">
+      <div className="footer-content flex flex md:flex-row flex-col justify-center gap-[5vw] lg:gap-60 items-center h-full pb-10">
 
         <div className="flex flex-col gap-10 items-start">
-        <div className="flex sm:flex-col flex-row items-start justify-start">
+        <div className="flex md:flex-col flex-row items-start justify-start">
 
           <div className="flex justify-center items-start flex-col gap-2">
             <h3 className="font-bold sm:text-xl text-sm mb-2">Kontakt</h3>
@@ -70,7 +70,7 @@ const Footer = () => {
 
         <div
           id="location"
-          className="flex justify-center items-center sm:w-[350px] sm:h-[250px] w-[300px] h-[200px]"
+          className="flex justify-center items-center sm:w-[350px] sm:h-[250px] w-[300px] h-[200px] mt-10 sm:mt-0"
         >
           <iframe
             title="Google mapa - Pizzeria Wisa"

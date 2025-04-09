@@ -11,10 +11,14 @@ const HeaderLogo = () => {
   return (
     <div
       id="header-logo"
-      className="flex items-center justify-center cursor-pointer"
+      className="hidden lg:flex lg:fixed top-0 left-10 items-center justify-center cursor-pointer z-10"
       onClick={handleScrollToHome}
     >
-      <img src="assets/other/wisalogo.webp" alt="logo" className="w-22 sm:w-30" />
+      <img
+        src="assets/other/wisalogo.svg"
+        alt="logo"
+        className="w-22 sm:w-26 lg:w-28"
+      />
     </div>
   );
 };

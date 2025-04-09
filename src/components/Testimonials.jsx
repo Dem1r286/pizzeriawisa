@@ -12,10 +12,16 @@ const testimonials = [
       "Najbolja pica u gradu, moja omiljena pizza je ona sa piletinom, sve preporuke 👌🏻👌🏻👌🏻",
   },
   {
-    name: "Arman Garibovic",
-    date: "7.12.2024",
-    rating: 4,
-    description: "Dobra hrana, ljubazno osoblje",
+    name: "Amela Sefer",
+    date: "prije 2 godine",
+    rating: 5,
+    description: "Odlična hrana, usluga sve pohvale. Zaista nemam zamjerke 👌👌",
+  },
+  {
+    name: "Ivana Pandurevic",
+    date: "prije godinu dana",
+    rating: 5,
+    description: "Sve pohvale za kulturno osoblje. Hrana, zasluzena desetka ❤️",
   },
   {
     name: "Samah Abdulah",
@@ -57,6 +63,13 @@ const testimonials = [
     rating: 5,
     description:
       "Ljubazni i ljubazni, pizza je dosta brzo dostavljena (napolju je bilo 40 stepeni Celzijusa). Pica je odlična (wisa i mexicana), dobri sastojci, kvalitetno meso.",
+  },
+  {
+    name: "Nijaz Rahman",
+    date: "prije 2 mjeseca",
+    rating: 5,
+    description:
+      "Sve pohvale. Ukusne pizze i ostala jela. Ljubazno osoblje",
   },
   {
     name: "Eldar Vejsilagić",
@@ -111,7 +124,7 @@ const Testimonials = () => {
                 key={index}
                 className="bg-white rounded-xl shadow-xl p-6"
                 style={{
-                  height: "300px",
+                  height: "250px",
                   width: "100%",
                   display: "flex",
                   flexDirection: "column",
