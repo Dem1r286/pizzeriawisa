@@ -355,12 +355,11 @@ const FoodOffer = () => {
                   <div className="w-full h-[35%] text-black p-4 flex justify-between flex-col rounded-b-2xl">
                     <div className="flex justify-center items-start gap-1 flex-col">
                       <p className="text-lg font-semibold">{item.title}</p>
-                      <p className="text-[13px]">{item.description}</p>
+                      <p className="text-[11px] md:text-[13px]">{item.description}</p>
                     </div>
 
-                    <div className="flex flex-row justify-between items-center px-6">
                       {item.title.includes("Pizza") ? (
-                        <>
+                        <div className="flex flex-row justify-between px-6">
                         <div className="flex justify-center items-center flex-col">
                             <p className="text-xs">mala</p>
                             <p className="text-[15px] md:text-[19px] font-black text-[#f3274c]">
@@ -379,16 +378,15 @@ const FoodOffer = () => {
                               {item.price3}
                             </p>
                           </div>
-                        </>
+                        </div>
                       ) : (
-                        <div className="flex justify-center items-start flex-col w-full">
+                        <div className="flex justify-center items-start flex-col w-full px-1">
                           <p className="text-[15px] md:text-[19px] font-black text-[#f3274c]">
                             {item.price}
                           </p>
                         </div>
                       )}
                     </div>
-                  </div>
                 </motion.div>
               ))}
           </AnimatePresence>
