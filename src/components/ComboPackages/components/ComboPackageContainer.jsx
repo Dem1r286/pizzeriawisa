@@ -21,19 +21,19 @@ const ComboPackageContainer = () => {
       <FadeInSection delay={0.2}>
         <ComboCard
           imageSrc="assets/combos/combo1.webp"
-          className="w-full max-w-[350px] aspect-w-1 aspect-h-1 object-cover"
+          className="w-full aspect-w-1 aspect-h-1 object-cover"
         />
       </FadeInSection>
       <FadeInSection delay={0.4}>
         <ComboCard
           imageSrc="assets/combos/combo2.webp"
-          className="w-full max-w-[350px] aspect-w-1 aspect-h-1 object-cover"
+          className="w-full aspect-w-1 aspect-h-1 object-cover"
         />
       </FadeInSection>
       <FadeInSection delay={0.6}>
         <ComboCard
           imageSrc="assets/combos/combo3.webp"
-          className="w-full max-w-[350px] aspect-w-1 aspect-h-1 object-cover"
+          className="w-full aspect-w-1 aspect-h-1 object-cover"
         />
       </FadeInSection>
     </div>
