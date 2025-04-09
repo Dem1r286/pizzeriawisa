@@ -382,7 +382,7 @@ const FoodOffer = () => {
                         </>
                       ) : (
                         <div className="flex justify-center items-start flex-col w-full">
-                          <p className="text-[18px] md:text-[20px] font-black text-[#f3274c]">
+                          <p className="text-[14px] md:text-[20px] font-black text-[#f3274c]">
                             {item.price}
                           </p>
                         </div>
