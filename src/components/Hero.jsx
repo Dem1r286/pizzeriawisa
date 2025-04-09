@@ -39,10 +39,12 @@ const Hero = () => {
         {/* Left Side Content */}
         <div className="flex justify-center items-center flex-col">
           <div className="flex justify-center items-start flex-col px-10 lg:px-20 py-10 backdrop-blur-sm bg-white/70 rounded-2xl shadow-xl">
-            <p className="text-black text-[25px] font-semibold sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">
+            <h1 className="text-black text-[25px] font-semibold sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">
               Vruća <span className="text-[#F3274C]">Pizza</span>,{" "}
-            </p>
-            <p className="text-black text-[25px] font-semibold sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">Besplatna Dostava</p>
+            </h1>
+            <h2 className="text-black text-[25px] font-semibold sm:text-[30px] md:text-[30px] 
+            lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">
+              Besplatna Dostava</h2>
 
             <p className="text-[12px] sm:text-[14px] 2xl:text-[17px]">
               Radno vrijeme: od ponedjeljka do subote, od{" "}
