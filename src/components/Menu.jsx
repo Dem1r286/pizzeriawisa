@@ -3,14 +3,6 @@ import { X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Menu = ({ handleMenuToggle }) => {
-  useEffect(() => {
-    document.body.classList.add("menu-open");
-
-    return () => {
-      document.body.classList.remove("menu-open");
-    };
-  }, []);
-
   return (
     <div
     id="menu"

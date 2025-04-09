@@ -8,6 +8,3 @@ body,
   width: 100%;
   scrollbar-color: #F3274C #222222;
 }
-body.menu-open {
-  overflow: hidden;
-}

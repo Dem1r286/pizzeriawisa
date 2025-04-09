@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { X } from "lucide-react";
 import Waves from "../../Footer/components/Waves";
 import HeaderLinks from "./HeaderLinks";
@@ -25,6 +25,25 @@ const HamburgerMenu = ({ isMenuOpen, setIsMenuOpen }) => {
     },
   ];
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    }
+  
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    };
+  }, [isMenuOpen]);
+  
+
   return (
     <div
       className={`absolute top-0 right-0 w-full h-screen z-10000 flex lg:hidden bg-gray-900 bg-opacity-90 flex flex-col shadow-lg items-center justify-between text-white text-lg transition-transform duration-300 ${
@@ -33,7 +52,7 @@ const HamburgerMenu = ({ isMenuOpen, setIsMenuOpen }) => {
     >
       <div className="w-full flex items-center justify-end p-6">
         <div className="flex lg:hidden items-center gap-6 p-2 bg-white rounded-xl shadow-md border-2 border-[#222222] hover:scale-104 transition-transform duration-300">
-            <X onClick={() => setIsMenuOpen(!isMenuOpen)} size={30} className="text-black" />
+          <X onClick={() => setIsMenuOpen(false)} size={30} className="text-black" />
         </div>
       </div>
 
@@ -41,6 +60,7 @@ const HamburgerMenu = ({ isMenuOpen, setIsMenuOpen }) => {
         <HeaderLinks onLinkClick={() => setIsMenuOpen(false)} />
       </div>
       <div></div>
+
       <div className="absolute bottom-0 w-full">
         <Waves customStyles={customWaveStyles} />
       </div>
