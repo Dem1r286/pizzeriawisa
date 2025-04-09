@@ -72,7 +72,7 @@ const FoodOffer = () => {
     },
     {
       imageSrc: "assets/foodImages/capricciosapizza.webp",
-      title: "Capricciosa",
+      title: "Capricciosa Pizza",
       description: "Sos, sir, šunka, gljive, origano",
       price: "7KM",
       price2: "9KM",
@@ -80,7 +80,7 @@ const FoodOffer = () => {
     },
     {
       imageSrc: "assets/foodImages/margheritapizza.webp",
-      title: "Margherita",
+      title: "Margherita Pizza",
       description: "Sos, sir, origano",
       price: "6KM",
       price2: "8KM",
@@ -88,7 +88,7 @@ const FoodOffer = () => {
     },
     {
       imageSrc: "assets/foodImages/funghipizza.webp",
-      title: "Funghi",
+      title: "Funghi Pizza",
       description: "Sos, sir, gljive, origano",
       price: "6KM",
       price2: "8KM",
