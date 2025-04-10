@@ -48,7 +48,7 @@ const DeliveryProcess = () => {
             </p>
             <img
               src="assets/DeliveryProcessIcons/deliverybar.webp"
-              alt=""
+              alt="faza isporuke"
               className="w-50"
             />
           </div>
@@ -58,7 +58,7 @@ const DeliveryProcess = () => {
       <div className="relative w-full overflow-hidden">
         <motion.img
           src="assets/DeliveryProcessIcons/scooterdelivery.webp"
-          alt="Scooter"
+          alt="Dostavni skuter"
           className="w-28 md:w-40"
           initial={{ x: "-200px", opacity: 1 }}
           animate={{

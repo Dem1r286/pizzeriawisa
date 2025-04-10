@@ -5,32 +5,32 @@ const ImageLayout = () => {
     <div className="w-screen grid grid-cols-2 md:grid-cols-3 gap-0">
       <img
         src="assets/ImageGallery/image1.webp"
-        alt="Pizza"
+        alt="Wisa Pizza"
         className="w-full object-cover h-full"
       />
       <img
         src="assets/ImageGallery/image2.webp"
-        alt="Food container"
+        alt="Wisa"
         className="w-full object-cover h-full"
       />
       <img
         src="assets/ImageGallery/image3.webp"
-        alt="Pizza close-up"
+        alt="Meni Pizza"
         className="w-full object-cover h-full"
       />
       <img
         src="assets/ImageGallery/image4.webp"
-        alt="Focaccia bread"
+        alt="Wisa objekat"
         className="w-full object-cover h-full"
       />
       <img
         src="assets/ImageGallery/image5.webp"
-        alt="More pizza"
+        alt="Wisa meni"
         className="w-full object-cover h-full"
       />
       <img
         src="assets/ImageGallery/image6.webp"
-        alt="Delicious dish"
+        alt="Wisa objekat"
         className="w-full object-cover h-full"
       />
     </div>

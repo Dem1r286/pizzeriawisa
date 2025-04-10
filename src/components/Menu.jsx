@@ -31,22 +31,22 @@ const Menu = ({ handleMenuToggle }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 px-4">
           <img
             src="/assets/menus/pizzas.webp"
-            alt="Pizzas"
+            alt="Pizze"
             className="w-full object-contain"
           />
           <img
             src="/assets/menus/sandwiches.webp"
-            alt="Sandwiches"
+            alt="Sendviči"
             className="w-full object-contain"
           />
           <img
             src="/assets/menus/drinks.webp"
-            alt="Drinks"
+            alt="Pića"
             className="w-full object-contain"
           />
           <img
             src="/assets/menus/other.webp"
-            alt="Other"
+            alt="Ostalo"
             className="w-full object-contain"
           />
         </div>

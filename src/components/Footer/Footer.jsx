@@ -49,7 +49,7 @@ const Footer = () => {
                 <img
                   src="assets/other/instagram.webp"
                   className="w-6 cursor-pointer"
-                  alt="Instagram"
+                  alt="Instagram Profil"
                 />
               </a>
               <a
@@ -60,7 +60,7 @@ const Footer = () => {
                 <img
                   src="assets/other/facebook.webp"
                   className="w-6 cursor-pointer"
-                  alt="Facebook"
+                  alt="Facebook Profil"
                 />
               </a>
             </div>

@@ -16,7 +16,7 @@ const HeaderLogo = () => {
     >
       <img
         src="assets/other/wisalogo.svg"
-        alt="logo"
+        alt="Wisa Pizzeria Logo"
         className="w-22 sm:w-26 2xl:w-28"
       />
     </div>
