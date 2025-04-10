@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { X } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -16,26 +16,37 @@ const Menu = ({ handleMenuToggle }) => {
       >
         <X className="w-10 h-10" />
       </Link>
-      <div className="w-full h-full max-w-screen-xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 py-40">
+
+      <div className="w-full h-full max-w-screen-xl mx-auto px-4 py-20">
+
+        <div className="text-center mb-10">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-semibold">
+            Meni
+          </h1>
+          <h2 className="text-sm md:text-lg text-gray-300 mt-2">
+            Pogledajte naš meni – sve što nudimo na jednom mjestu.
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 px-4">
           <img
             src="/assets/menus/pizzas.webp"
-            alt="Menu"
+            alt="Pizzas"
             className="w-full object-contain"
           />
           <img
             src="/assets/menus/sandwiches.webp"
-            alt="Menu"
+            alt="Sandwiches"
             className="w-full object-contain"
           />
           <img
             src="/assets/menus/drinks.webp"
-            alt="Menu"
+            alt="Drinks"
             className="w-full object-contain"
           />
           <img
             src="/assets/menus/other.webp"
-            alt="Menu"
+            alt="Other"
             className="w-full object-contain"
           />
         </div>
