@@ -303,9 +303,9 @@ const FoodOffer = () => {
     >
       {/* Header Section */}
       <div className="flex justify-center items-center flex-col">
-        <h3 className="text-3xl md:text-5xl text-[#f3274c] font-bold flex-grow md:mb-0">
+        <h2 role="heading" aria-level="2" className="text-3xl md:text-5xl text-[#f3274c] font-bold flex-grow md:mb-0">
           Ponuda
-        </h3>
+        </h2>
         <p className="text-center mt-3 text-xs sm:text-base">
           Zavirite u našu ponudu — nešto ukusno, svježe i baš po vašem ukusu!
         </p>
