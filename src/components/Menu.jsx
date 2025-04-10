@@ -24,7 +24,7 @@ const Menu = ({ handleMenuToggle }) => {
             Meni
           </h1>
           <h2 className="text-sm md:text-lg text-gray-300 mt-2">
-            Pogledajte naš meni – sve što nudimo na jednom mjestu.
+            Pogledajte naš meni – sve što nudimo na jednom mjestu
           </h2>
         </div>
 
