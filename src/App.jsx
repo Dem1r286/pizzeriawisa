@@ -18,39 +18,49 @@ const HeaderLogo = lazy(() => import("./components/Header/components/HeaderLogo"
 
 function App() {
   return (
-    <Router basename="/"> 
-      <Suspense fallback={<Loader />}>
-        <div className="flex justify-center items-center flex-col">
-          <Header />
-          <HeaderLogo />
-          <Routes>
-            <Route
-              path="/"
-              element={(
-                <>
-                  <Hero />
-                  <div
-                    className="w-full bg-cover bg-center bg-no-repeat"
-                    style={{
-                      backgroundImage: "url(assets/other/waves.webp)", 
-                    }}
-                  >
-                    <FoodOffer />
-                    <DeliveryProcess />
-                  </div>
-                  <ComboPackages />
-                  <ImageLayout />
-                  <Testimonials />
-                </>
-              )}
-            />
-            <Route path="/menu" element={<Menu />} />
-          </Routes>
-          <Footer />
-        </div>
-      </Suspense>
-    </Router>
+    <div className="flex justify-center items-center h-screen">
+      <Loader />
+    </div>
   );
 }
 
+
 export default App;
+
+
+// function App() {
+//   return (
+//     <Router basename="/"> 
+//       <Suspense fallback={<Loader />}>
+//         <div className="flex justify-center items-center flex-col">
+//           <Header />
+//           <HeaderLogo />
+//           <Routes>
+//             <Route
+//               path="/"
+//               element={(
+//                 <>
+//                   <Hero />
+//                   <div
+//                     className="w-full bg-cover bg-center bg-no-repeat"
+//                     style={{
+//                       backgroundImage: "url(assets/other/waves.webp)", 
+//                     }}
+//                   >
+//                     <FoodOffer />
+//                     <DeliveryProcess />
+//                   </div>
+//                   <ComboPackages />
+//                   <ImageLayout />
+//                   <Testimonials />
+//                 </>
+//               )}
+//             />
+//             <Route path="/menu" element={<Menu />} />
+//           </Routes>
+//           <Footer />
+//         </div>
+//       </Suspense>
+//     </Router>
+//   );
+// }
