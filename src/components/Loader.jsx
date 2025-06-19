@@ -1,15 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+
 const Loader = () => {
-    const [showMessage, setShowMessage] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShowMessage(true), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
-
   return (
     <div className="flex flex-col justify-center items-center h-screen space-y-6">
       <motion.div
@@ -19,11 +11,6 @@ const Loader = () => {
       />
       <div className="text-center">
         <div className="text-lg font-medium">Učitava se...</div>
-         {showMessage && (
-        <p className="text-gray-500 mt-4 text-center">
-          Nešto nije uredu. Molimo pokušajte ponovo.
-        </p>
-      )}
       </div>
     </div>
   );
