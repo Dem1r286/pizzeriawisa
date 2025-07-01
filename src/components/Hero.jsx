@@ -110,6 +110,16 @@ const Hero = () => {
         </div>
 
         <div className="relative w-full h-screen overflow-hidden">
+
+            <style>
+        {`
+          @media (min-width: 2500px) {
+            .right-limit-extra-wide {
+              right: -20% !important;
+            }
+          }
+        `}
+      </style>
           {/* For small screens: bottom center */}
           {screenWidth < 1280 ? (
             <div className="absolute  left-1/2 transform -translate-x-1/2 z-0"
@@ -145,9 +155,9 @@ const Hero = () => {
             </div>
           ) : (
             // For large screens: right side, rotated
-            <div className="absolute top-1/2 transform -translate-y-1/2 right-[-50%] z-0">
+            <div  className="absolute top-1/2 transform -translate-y-1/2 right-[-50%] right-limit-extra-wide z-0">
               <div
-                className="overflow-hidden w-[60vw] max-w-[1000px]"
+                className="overflow-hidden w-[60vw] max-w-[1200px]"
                 style={{
                   transform: "rotate(90deg)",
                   transition: "transform 0.3s ease-in-out",
