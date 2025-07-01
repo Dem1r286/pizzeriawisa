@@ -128,8 +128,8 @@ const Hero = () => {
                   screenHeight < 700
                     ? "-250%"
                     : screenHeight < 800
-                      ? "-120%"
-                      : "-80%",
+                      ? "-80%"
+                      : "-60%",
               }}>
               <div
                 className="overflow-hidden w-[105vw] sm:w-[90vw] md:w-[80vw] lg:w-[70vw]"
