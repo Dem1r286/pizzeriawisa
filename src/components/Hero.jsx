@@ -46,7 +46,7 @@ const Hero = () => {
             Brza i Besplatna Dostava u Sarajevu</h3>
 
 
-          <div className="backdrop-blur-sm bg-white/60 rounded-2xl px-6 text-center lg:px-20 py-7 mx-4">
+          <div className="backdrop-blur-sm bg-white/80 rounded-2xl px-6 text-center lg:px-20 py-7 mx-4">
             <h1 role="heading" aria-level="1" className="whitespace-nowrap text-black text-[30px] font-bold sm:text-[30px] self-center text-center xl:self-start mb-2 md:text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[60px] 3xl:text-[80px]">
               Pizzeria Wisa
             </h1>
