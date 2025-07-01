@@ -48,7 +48,7 @@ const HeaderLinks = ({ onLinkClick }) => {
       </button>
       <Link
         to="/menu"
-        className="cursor-pointer text-white font-semibold bg-gradient-to-b from-[#F3274C] to-[#d4203f] rounded-xl py-1 px-4 hover:scale-105 transition-transform duration-300"
+        className="cursor-pointer text-white font-semibold bg-red-500 rounded-xl py-1 px-4 hover:scale-105 transition-transform duration-300"
         style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)" }}
         onClick={() => {
           if (window.innerWidth < 1024 && onLinkClick) onLinkClick();

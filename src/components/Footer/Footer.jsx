@@ -9,24 +9,24 @@ const Footer = () => {
       <div className="footer-content flex flex md:flex-row flex-col justify-center gap-[5vw] lg:gap-60 items-center h-full pb-10">
 
         <div className="flex flex-col gap-10 items-start">
-        <div className="flex md:flex-col flex-row items-start justify-start">
+          <div className="flex md:flex-col flex-row items-start justify-start">
 
-          <div className="flex justify-center items-start flex-col gap-2">
-            <h3 className="font-bold sm:text-xl text-sm mb-2">Kontakt</h3>
-            <p className="sm:text-md text-xs">
-              📍 Lokacija: Tešanjska bb, Sarajevo, Bosnia and Herzegovina
-            </p>
-            <p className="sm:text-md text-xs">
-              📞 Telefon:{" "}
-              <span className="font-bold sm:text-md text-xs">
-                +387 61 205 605 ili +387 62 805 205
-              </span>
-            </p>
-            <p className="sm:text-md text-xs">
-              📧 Email: wisa.pizzeria@gmail.com
-            </p>
+            <div className="flex justify-center items-start flex-col gap-2">
+              <h3 className="font-bold sm:text-xl text-sm mb-2">Kontakt</h3>
+              <p className="sm:text-md text-xs">
+                📍 Lokacija: Tešanjska bb, Sarajevo, Bosnia and Herzegovina
+              </p>
+              <p className="sm:text-md text-xs">
+                📞 Telefon:{" "}
+                <span className="font-bold sm:text-md text-xs">
+                  +387 61 205 605 ili +387 62 805 205
+                </span>
+              </p>
+              <p className="sm:text-md text-xs">
+                📧 Email: wisa.pizzeria@gmail.com
+              </p>
+            </div>
           </div>
-        </div>
 
           <div className="flex items-center justify-between gap-20">
             <div className="flex flex-col justify-center items-start">
@@ -85,7 +85,15 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-10 sm:text-xs text-[9px] w-full py-3">
+      <div className="flex flex-row justify-center items-center sm:text-xs text-[9px] w-full pb-5">
+        <img
+          src="assets/other/plamen.webp"
+          className="cursor-pointer w-30"
+          alt="Facebook Profil"
+        />
+      </div>
+
+      <div className="flex justify-center items-center gap-10 sm:text-xs text-[9px] w-full py-3 ml-1 md:ml-2">
         <p className="cursor-pointer">© Pizzeria Wisa</p>
         <p className="cursor-pointer">Uslovi korištenja</p>
         <p className="cursor-pointer">Politika privatnosti</p>

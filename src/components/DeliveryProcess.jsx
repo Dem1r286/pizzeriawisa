@@ -24,7 +24,7 @@ const DeliveryProcess = () => {
   return (
     <div className="flex justify-center items-center w-screen flex-col">
       <div className="flex justify-center items-center flex-col mb-20">
-        <p className="font-black text-[#F3274C] sm:text-xl text-xs text-center">EKSPRESNA DOSTAVA</p>
+        <p className="font-black text-red-500 sm:text-xl text-xs text-center">EKSPRESNA DOSTAVA</p>
         <h4 className="font-bold sm:text-5xl text-2xl text-[#222222] mt-2 text-center">
           BRZO I JEDNOSTAVNO
         </h4>
@@ -35,7 +35,7 @@ const DeliveryProcess = () => {
         </p>
       </div>
 
-      <div className="flex justify-center items-center gap-20 2xl:gap-30 mb-30 px-20 flex-wrap">
+      <div className="flex justify-center items-center gap-20 2xl:gap-30 mb-20 px-20 flex-wrap">
         {stages.map((stage, index) => (
           <div key={index} className="flex flex-col items-center gap-3">
             <img
@@ -57,7 +57,7 @@ const DeliveryProcess = () => {
 
       <div className="relative w-full overflow-hidden">
         <motion.img
-          src="assets/DeliveryProcessIcons/scooterdelivery.webp"
+          src="assets/DeliveryProcessIcons/scooter.webp"
           alt="Dostavni skuter"
           className="w-28 md:w-40"
           initial={{ x: "-200px", opacity: 1 }}

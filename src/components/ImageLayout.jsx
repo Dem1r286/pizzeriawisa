@@ -3,10 +3,13 @@ import React from "react";
 const ImageLayout = () => {
   return (
     <div className="w-screen grid grid-cols-2 md:grid-cols-3 gap-0">
-      <img
-        src="assets/ImageGallery/image1.webp"
-        alt="Wisa Pizza"
+       <video
+        src="/public/assets/ImageGallery/video2.mp4"
         className="w-full object-cover h-full"
+        autoPlay
+        loop
+        muted
+        playsInline
       />
       <img
         src="assets/ImageGallery/image2.webp"
@@ -28,10 +31,13 @@ const ImageLayout = () => {
         alt="Wisa meni"
         className="w-full object-cover h-full"
       />
-      <img
-        src="assets/ImageGallery/image6.webp"
-        alt="Wisa objekat"
+      <video
+        src="/public/assets/ImageGallery/video1.mp4"
         className="w-full object-cover h-full"
+        autoPlay
+        loop
+        muted
+        playsInline
       />
     </div>
   );

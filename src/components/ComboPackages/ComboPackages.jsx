@@ -18,7 +18,7 @@ const FadeInSection = ({ children }) => {
 
 const ComboPackages = () => {
   return (
-    <div className="flex justify-center items-center flex-col bg-gradient-to-b from-[#f3274c] via-[#d82042] to-[#b71837] w-screen pt-10 pb-30 gap-16 select-none px-10">
+    <div className="flex justify-center items-center flex-col bg-red-500 w-screen pt-10 pb-30 gap-16 select-none px-10">
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-row justify-center items-center gap-6 mb-4">
           <p className="font-bold sm:text-lg text-sm text-white" style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)" }}>Akcijska Ponuda</p>

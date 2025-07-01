@@ -299,11 +299,11 @@ const FoodOffer = () => {
   return (
     <div
       id="food-offer"
-      className="flex flex-col items-center gap-6 md:gap-16 w-full py-10 pt-20 pb-40"
+      className="flex flex-col items-center gap-6 md:gap-16 w-full py-10 pt-20 pb-30 z-10"
     >
       {/* Header Section */}
       <div className="flex justify-center items-center flex-col">
-        <h2 role="heading" aria-level="2" className="text-3xl md:text-5xl text-[#f3274c] font-bold flex-grow md:mb-0">
+        <h2 role="heading" aria-level="2" className="text-3xl md:text-5xl text-red-500 font-bold flex-grow md:mb-0">
           Ponuda
         </h2>
         <p className="text-center mt-3 text-xs sm:text-base">
@@ -317,10 +317,10 @@ const FoodOffer = () => {
         <div
           onClick={prevSlide}
           disabled={currentIndex === 0}
-          className={`absolute left-[5%] p-1 xl:p-2 md:left-6 rounded-full bg-[#f3274c] ${
+          className={`absolute left-[5%] p-1 xl:p-2 md:left-6 rounded-full bg-red-500 ${
             currentIndex === 0
               ? "opacity-50 cursor-not-allowed"
-              : "hover:bg-red-500"
+              : "hover:bg-red-600"
           }`}
         >
           <ChevronLeft size={24} className="text-white" />
@@ -396,10 +396,10 @@ const FoodOffer = () => {
         <div
           onClick={nextSlide}
           disabled={currentIndex >= foodData.length - visibleCount}
-          className={`absolute right-[5%] p-1 md:right-6 xl:p-2 rounded-full bg-[#f3274c] ${
+          className={`absolute right-[5%] p-1 md:right-6 xl:p-2 rounded-full bg-red-500 ${
             currentIndex >= foodData.length - visibleCount
               ? "opacity-50 cursor-not-allowed"
-              : "hover:bg-red-500"
+              : "hover:bg-red-600"
           }`}
         >
           <ChevronRight size={24} className="text-white" />
@@ -421,7 +421,7 @@ const FoodOffer = () => {
 
         <Link
           to="/menu"
-          className="cursor-pointer flex flex-row justify-center items-center gap-3 w-fit bg-gradient-to-b from-[#F3274C] to-[#d4203f] h-fit py-2 px-4 text-white font-semibold shadow-lg rounded-xl text-sm sm:text-lg hover:scale-104 transition-transform duration-300"
+          className="cursor-pointer flex flex-row justify-center items-center gap-3 w-fit  bg-red-500 h-fit py-2 px-4 text-white font-semibold shadow-lg rounded-xl text-sm sm:text-lg hover:scale-104 transition-transform duration-300"
           style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)" }}
         >
           Pogledajte Meni

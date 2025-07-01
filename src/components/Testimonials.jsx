@@ -88,7 +88,7 @@ const Testimonials = () => {
         backgroundImage: `url('assets/other/background.webp')`,
         backgroundSize: "cover",
       }}
-      className="select-none flex flex-col w-screen h-screen justify-center items-center px-40 pb-10 xl:pb-40 xl:pt-20"
+      className="select-none flex flex-col w-screen justify-center items-center px-40 pb-40 pt-30 xl:pt-20"
     >
       <div className="bg-black/90 px-20 py-10 rounded-xl my-10">
         <div className="flex justify-center items-center flex-col mb-10 gap-2">
