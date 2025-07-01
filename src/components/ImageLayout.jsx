@@ -4,7 +4,7 @@ const ImageLayout = () => {
   return (
     <div className="w-screen grid grid-cols-2 md:grid-cols-3 gap-0">
        <video
-        src="/public/assets/ImageGallery/video2.mp4"
+        src="assets/ImageGallery/video2.mp4"
         className="w-full object-cover h-full"
         autoPlay
         loop
@@ -32,7 +32,7 @@ const ImageLayout = () => {
         className="w-full object-cover h-full"
       />
       <video
-        src="/public/assets/ImageGallery/video1.mp4"
+        src="assets/ImageGallery/video1.mp4"
         className="w-full object-cover h-full"
         autoPlay
         loop
