@@ -128,7 +128,7 @@ const Hero = () => {
                   screenHeight < 700
                     ? "-250%"
                     : screenHeight < 800
-                      ? "-150%"
+                      ? "-130%"
                       : "-80%",
               }}>
               <div
