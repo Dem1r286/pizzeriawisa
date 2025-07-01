@@ -113,7 +113,7 @@ const Hero = () => {
           {/* For small screens: bottom center */}
           {screenWidth < 1280 ? (
             <div className="absolute  left-1/2 transform -translate-x-1/2 z-0"
-             style={{ bottom: screenHeight < 800 ? "-90%" : "-70%" }}>
+             style={{ bottom: screenHeight < 800 ? "-110%" : "-70%" }}>
               <div
                 className="overflow-hidden w-[105vw] sm:w-[90vw] md:w-[80vw] lg:w-[70vw]"
                 style={{
