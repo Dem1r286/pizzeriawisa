@@ -11,7 +11,7 @@ const HeaderLogo = () => {
   return (
     <div
       id="header-logo"
-      className="flex fixed top-[-4px] left-8 items-center justify-center cursor-pointer z-10"
+      className="flex fixed top-[-4px] left-5 md:left-8 items-center justify-center cursor-pointer z-10"
       onClick={handleScrollToHome}
     >
       <img
