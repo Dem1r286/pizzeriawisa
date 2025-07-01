@@ -31,7 +31,7 @@ const Hero = () => {
   return (
     <div
       id="homepage"
-      className="flex justify-center items-center w-screen xl:h-screen h-screen bg-cover bg-center pt-[20vh] xl:pt-0"
+      className="flex justify-center items-center w-screen xl:h-screen h-screen bg-cover bg-center pt-[15vh] xl:pt-0"
       style={{
         backgroundImage: "url(assets/other/background.webp",
         backgroundSize: "cover",
@@ -128,7 +128,7 @@ const Hero = () => {
                   screenHeight < 700
                     ? "-250%"
                     : screenHeight < 800
-                      ? "-130%"
+                      ? "-120%"
                       : "-80%",
               }}>
               <div
