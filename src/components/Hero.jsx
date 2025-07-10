@@ -141,13 +141,13 @@ const Hero = () => {
                 <div className="relative flex justify-center items-center w-full aspect-square">
                   <img
                     src="assets/other/plate.webp"
-                    alt="plate"
+                    alt="Wisa Pizza"
                     className="animate-spin w-full h-auto"
                     style={{ animationDuration: "3s" }}
                   />
                   <img
                     src="assets/other/pizza.webp"
-                    alt="pizza"
+                    alt="Wisa pizza"
                     className="absolute"
                     style={{
                       width: "80%",
@@ -173,13 +173,13 @@ const Hero = () => {
                 <div className="relative flex justify-center items-center w-full aspect-square">
                   <img
                     src="assets/other/plate.webp"
-                    alt="plate"
+                    alt="Wisa pizza"
                     className="animate-spin w-full h-auto"
                     style={{ animationDuration: "3s" }}
                   />
                   <img
                     src="assets/other/pizza.webp"
-                    alt="pizza"
+                    alt="Wisa pizza"
                     className="absolute"
                     style={{
                       width: "80%",
