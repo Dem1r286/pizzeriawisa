@@ -5,7 +5,7 @@ const WisaSeo = () => {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "Pizzeria Wisa",
-    "image": "https://www.wisapizzeria.com/images/other/richresult.webp",
+    "image": "https://www.wisapizzeria.com/assets/other/richresult.webp",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Tešanjska bb, Marijin Dvor",
