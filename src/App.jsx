@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
+import WisaSeo from "./components/WisaSeo.jsx";
 
 const ComboPackages = lazy(() =>
   import("./components/ComboPackages/ComboPackages")
@@ -28,6 +29,7 @@ function App() {
               path="/"
               element={(
                 <>
+                  <WisaSeo />
                   <Hero />
                   <div
                     className="w-full bg-cover bg-center bg-no-repeat"
