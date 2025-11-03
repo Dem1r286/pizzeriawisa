@@ -1,12 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MapPin, ForkKnife, MousePointerClick, ArrowDown } from "lucide-react";
-import { useState } from "react";
-import { useEffect } from "react";
 
 const Hero = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
 
   const scrollToSection = () => {
     const el = document.getElementById('food-offer');
@@ -18,7 +15,6 @@ const Hero = () => {
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
-      setScreenHeight(window.innerHeight);
     };
 
     window.addEventListener("resize", handleResize);
@@ -38,7 +34,7 @@ const Hero = () => {
       }}
     >
       <div className="flex justify-between w-full h-full ml-0 xl:ml-[5vw] flex-col xl:flex-row lg:px-0 gap-4">
-        {/* Left Side Content */}
+        {/* Left Side Content ... (No Changes Here) */}
         <div className="flex justify-center items-center flex-col">
 
           <h3 role="heading" aria-level="3" className="text-black font-bold text-[13px] md:text-[15px] lg:text-[20px] self-center shadow-md  bg-[#f39420] rounded-xl px-4 py-1 text-white mb-4 text-center"
@@ -120,17 +116,14 @@ const Hero = () => {
           }
         `}
           </style>
-          {/* For small screens: bottom center */}
+          {/* For small screens: bottom center - FIX APPLIED HERE */}
           {screenWidth < 1280 ? (
-            <div className="absolute  left-1/2 transform -translate-x-1/2 z-0 mt-20"
+            <div
+              className="absolute left-1/2 transform -translate-x-1/2 z-0" // Removed mt-20
               style={{
-                bottom:
-                  screenHeight < 700
-                    ? "-250%"
-                    : screenHeight < 800
-                      ? "-80%"
-                      : "-60%",
-              }}>
+                bottom: "-45%", // Set a safer, small negative percentage
+              }}
+            >
               <div
                 className="overflow-hidden w-[105vw] sm:w-[90vw] md:w-[80vw] lg:w-[70vw]"
                 style={{
@@ -194,10 +187,6 @@ const Hero = () => {
             </div>
           )}
         </div>
-
-
-
-
       </div>
     </div>
   );
