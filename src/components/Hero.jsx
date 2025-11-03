@@ -24,6 +24,18 @@ const Hero = () => {
     };
   }, []);
 
+  const getMarginTopClass = () => {
+    if (screenWidth >= 400 && screenWidth < 640) {
+      return 'mt-30'; 
+    }
+    else if (screenWidth < 400) {
+      return 'mt-5'; 
+    }
+    else if (screenWidth >= 640 && screenWidth < 1280) {
+      return 'mt-40';
+    }
+  };
+
   return (
     <div
       id="homepage"
@@ -105,8 +117,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative w-full h-screen overflow-hidden">
-
+        <div className={`relative w-full h-screen overflow-hidden mt-5 ${getMarginTopClass()}`}>
           <style>
             {`
           @media (min-width: 2500px) {
@@ -116,14 +127,9 @@ const Hero = () => {
           }
         `}
           </style>
-          {/* For small screens: bottom center - FIX APPLIED HERE */}
           {screenWidth < 1280 ? (
             <div
-              className="absolute left-1/2 transform -translate-x-1/2 z-0" // Removed mt-20
-              style={{
-                bottom: "-60%", // Set a safer, small negative percentage
-              }}
-            >
+              className="absolute left-1/2 transform -translate-x-1/2 z-0">
               <div
                 className="overflow-hidden w-[105vw] sm:w-[90vw] md:w-[80vw] lg:w-[70vw]"
                 style={{
