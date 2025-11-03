@@ -121,7 +121,7 @@ const Hero = () => {
             <div
               className="absolute left-1/2 transform -translate-x-1/2 z-0" // Removed mt-20
               style={{
-                bottom: "-45%", // Set a safer, small negative percentage
+                bottom: "-60%", // Set a safer, small negative percentage
               }}
             >
               <div
