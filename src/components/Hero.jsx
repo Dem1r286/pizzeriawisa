@@ -132,8 +132,6 @@ const Hero = () => {
               }
             `}
           </style>
-
-          {/* Small screens (mobile) */}
           {screenWidth < 1280 ? (
             <div
               className="absolute left-1/2 transform -translate-x-1/2 z-0 mt-20"
@@ -142,24 +140,34 @@ const Hero = () => {
                   screenHeight < 700
                     ? "-250%"
                     : screenHeight < 800
-                    ? "-80%"
-                    : "-60%",
+                      ? "-80%"
+                      : "-60%",
               }}
             >
               <div
-                className="overflow-hidden w-[105vw] sm:w-[90vw] md:w-[80vw] lg:w-[70vw]"
+                className="w-[105vw] sm:w-[90vw] md:w-[80vw] lg:w-[70vw]"
                 style={{
-                  transform: "rotate(90deg) translateZ(0)",
-                  willChange: "transform",
-                  transition: "transform 0.3s ease-in-out",
+                  // no rotation here — avoid transform on container
+                  perspective: "1000px",
+                  backfaceVisibility: "hidden",
                 }}
               >
-                <div className="relative flex justify-center items-center w-full aspect-square">
+                <div
+                  className="relative flex justify-center items-center w-full aspect-square"
+                  style={{
+                    transform: "rotate(90deg) translateZ(0)",
+                    willChange: "transform",
+                  }}
+                >
                   <img
                     src="assets/other/plate.webp"
                     alt="Wisa Pizza"
                     className="animate-spin w-full h-auto"
-                    style={{ animationDuration: "3s" }}
+                    style={{
+                      animationDuration: "3s",
+                      backfaceVisibility: "hidden",
+                      transform: "translateZ(0)",
+                    }}
                   />
                   <img
                     src="assets/other/pizza.webp"
@@ -169,8 +177,9 @@ const Hero = () => {
                       width: "80%",
                       top: "50%",
                       left: "50%",
-                      transform: "translate(-50%, -50%)",
+                      transform: "translate(-50%, -50%) translateZ(0)",
                       pointerEvents: "none",
+                      backfaceVisibility: "hidden",
                     }}
                   />
                 </div>
