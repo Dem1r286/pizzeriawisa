@@ -85,12 +85,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center items-center sm:text-xs text-[9px] w-full pb-5">
-        <img
-          src="assets/other/plamen.webp"
-          className="cursor-pointer w-30"
-          alt="Facebook Profil"
-        />
+      <div className="flex justify-center items-center gap-1 lg:gap-2 flex-col mt-5 md:mt-10 mb-5 transition-transform duration-200 hover:scale-105 cursor-pointer">
+        <p className="text-center text-white text-[10px] md:text-xs">ignited by</p>
+        <img src="assets/other/plamenlogo.webp" alt="Logo" className="w-20 xl:w-30 h-auto" />
       </div>
 
       <div className="flex justify-center items-center gap-10 sm:text-xs text-[9px] w-full py-3 ml-1 md:ml-2">

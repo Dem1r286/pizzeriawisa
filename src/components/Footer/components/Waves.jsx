@@ -13,7 +13,7 @@ const Waves = ({ customStyles }) => {
   const defaultStyles = [
     {
       height: {
-        base: "36rem",
+        base: "42rem",
         sm: "48rem",
       },
       opacity: 0.5,
@@ -22,8 +22,8 @@ const Waves = ({ customStyles }) => {
     },
     {
       height: {
-        base: "34rem",
-        sm: "45rem",
+        base: "38rem",
+        sm: "47rem",
       },
       opacity: 0.9,
       color: "#222222",
@@ -31,8 +31,8 @@ const Waves = ({ customStyles }) => {
     },
     {
       height: {
-        base: "30rem",
-        sm: "43rem",
+        base: "34rem",
+        sm: "44rem",
       },
       opacity: 1,
       color: "#222222",
